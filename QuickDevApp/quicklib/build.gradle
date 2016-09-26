@@ -32,8 +32,8 @@ dependencies {
     testCompile "junit:junit:$rootProject.ext.junitVersion"
 }
 
-def siteUrl = 'https://github.com/Hymanme/TagFlowLayout' // 项目的主页
-def gitUrl = 'https://github.com/Hymanme/TagFlowLayout.git' // Git 仓库的 url
+def siteUrl = 'https://github.com/wei886/QuickDevLib' // 项目的主页
+def gitUrl = 'https://github.com/wei886/QuickDevLib.git' // Git 仓库的 url
 // Maven Group ID for the artifact，填你唯一的groupid，
 // 强烈建议填写`com.github.yourusername`,其中 yourusername 为你 github 用户名
 group = "com.github.wei886.quickDev"
