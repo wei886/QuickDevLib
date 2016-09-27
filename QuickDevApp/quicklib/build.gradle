@@ -55,9 +55,9 @@ install {
                 }
                 developers {
                     developer {
-                        id 'hymanme'    //填写的一些基本信息
-                        name 'hymane'
-                        email 'hymanme@163.com'
+                        id 'wei886'    //填写的一些基本信息
+                        name 'wei886'
+                        email '742305574@qq.com'
                     }
                 }
                 scm {
