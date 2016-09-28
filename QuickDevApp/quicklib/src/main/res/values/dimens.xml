@@ -1,0 +1,5 @@
+<resources>
+
+    <dimen name="quick_srlayout_offset">60dp</dimen>
+
+</resources>
