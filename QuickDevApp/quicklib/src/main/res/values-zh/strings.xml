@@ -1,0 +1,9 @@
+<resources>
+
+    <!--listview-->
+    <string name="quick_lv_load_more">获取更多…</string>
+    <string name="quick_lv_no_more_data">没有更多数据啦</string>
+    <string name="quick_lv_retry">加载失败,请点击重试</string>
+
+
+</resources>
