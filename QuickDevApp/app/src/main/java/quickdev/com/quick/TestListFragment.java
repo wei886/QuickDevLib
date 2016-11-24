@@ -1,20 +1,19 @@
 package quickdev.com.quick;
 
-import android.os.Handler;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import common.ToastUtils;
+import ui.adapter.BaseRVAdapter;
 import ui.common.CommonConfig;
-import ui.fragment.QuickBaseListFragment;
+import ui.fragment.BaseListFragment;
 
-/**
- * 专辑表情列表
- * Created by Administrator on 2016/9/22.
- */
 
-public class TestListFragment extends QuickBaseListFragment {
+public class TestListFragment extends BaseListFragment {
 
 
     private ArrayList mData;
@@ -30,78 +29,118 @@ public class TestListFragment extends QuickBaseListFragment {
     @Override
     public void onRefreshData() {
 
-        new Handler().postDelayed(new Runnable() {
+
+        final List temp = new ArrayList();
+
+        for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE; i++) {
+            temp.add("" + i);
+        }
+
+
+        mData.addAll(temp);
+        if (getLoadType() == REQUEST_REFRESH) { //下拉刷新
+            resetAdapter(mAdapter);
+        } else {
+        notifyDataRequestSuccess(temp, mData);
+
+        }
+
+
+        mAdapter.setOnItemClickLintener(new BaseRVAdapter.OnItemClickListener() {
             @Override
-            public void run() {
-                        mData.clear();
-                final List temp = new ArrayList();
-                if (mData.size() > 30) {
-                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE / 2; i++) {
-                        temp.add("" + i);
-                    }
-                } else {
-                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE; i++) {
-                        temp.add("" + i);
-                    }
-                }
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        mData.addAll(temp);
-                        if (getLoadType() == REQUEST_REFRESH) { //下拉刷新
-                            refreshAdapter(mAdapter);
-                        } else {
-
-                            mAdapter.notifyDataSetChanged();
-                        }
-
-                        notifyDataRequestSuccess(temp, mData);
-                    }
-                });
+            public void onItemClickLintener(View view, int position) {
+                ToastUtils.toast(getActivity(),""+position);
             }
-        }, 3000);
+        });
+
+        mAdapter.setOnLongClickLintener(new BaseRVAdapter.OnItemLongClickLintener() {
+            @Override
+            public void onItemLongCLickLintener(View view, int position) {
+
+                ToastUtils.toast(getActivity(),"long:"+position);
+            }
+        });
+
+
+
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                        mData.clear();
+//                final List temp = new ArrayList();
+//                if (mData.size() > 20) {
+//                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE / 2; i++) {
+//                        temp.add("" + i);
+//                    }
+//                } else {
+//                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE; i++) {
+//                        temp.add("" + i);
+//                    }
+//                }
+//                getActivity().runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//                        mData.addAll(temp);
+//                        if (getLoadType() == REQUEST_REFRESH) { //下拉刷新
+//                            resetAdapter(mAdapter);
+//                        } else {
+//
+//                            mAdapter.notifyDataSetChanged();
+//                        }
+//
+//                        notifyDataRequestSuccess(temp, mData);
+//                    }
+//                });
+//            }
+//        }, 3000);
     }
 
     @Override
     public void onLoadMore() {
 
-
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                final List temp = new ArrayList();
-                if (mData.size() > 30) {
-                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE / 2; i++) {
-                        temp.add("" + i);
-                    }
-                } else {
-                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE; i++) {
-                        temp.add("" + i);
-                    }
-                }
-                getActivity().runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-
-                        mData.addAll(temp);
-                        if (getLoadType() == REQUEST_REFRESH) { //下拉刷新
-                            refreshAdapter(mAdapter);
-                        } else {
-
-                            mAdapter.notifyDataSetChanged();
-                        }
-
-                        notifyDataRequestSuccess(temp, mData);
-                    }
-                });
-            }
-        }, 3000);
+//        notifyDataRequestFailure();
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                final List temp = new ArrayList();
+//                if (mData.size() > 20) {
+//                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE / 2; i++) {
+//                        temp.add("" + i);
+//                    }
+//                } else {
+//                    for (int i = mData.size(); i < mData.size() + CommonConfig.PAGE_SIZE; i++) {
+//                        temp.add("" + i);
+//                    }
+//                }
+//                getActivity().runOnUiThread(new Runnable() {
+//                    @Override
+//                    public void run() {
+//
+//                        mData.addAll(temp);
+//                        if (getLoadType() == REQUEST_REFRESH) { //下拉刷新
+//                            resetAdapter(mAdapter);
+//                        } else {
+//
+//                            mAdapter.notifyDataSetChanged();
+//                        }
+//
+//                        notifyDataRequestSuccess(temp, mData);
+//                    }
+//                });
+//            }
+//        }, 3000);
 
     }
 
     @Override
     public void initData() {
-
+        mAdapter.addHeader(LayoutInflater.from(getActivity()).inflate(R.layout.head1, null));
+        mAdapter.addHeader(LayoutInflater.from(getActivity()).inflate(R.layout.head1, null));
+        mAdapter.addHeader(LayoutInflater.from(getActivity()).inflate(R.layout.head1, null));
+        mAdapter.addHeader(LayoutInflater.from(getActivity()).inflate(R.layout.head1, null));
+        mAdapter.addHeader(LayoutInflater.from(getActivity()).inflate(R.layout.head2, null));
+        mAdapter.addFooter(LayoutInflater.from(getActivity()).inflate(R.layout.foot1, null));
+        mAdapter.notifyDataSetChanged();
     }
 }

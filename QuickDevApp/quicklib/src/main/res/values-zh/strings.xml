@@ -6,4 +6,11 @@
     <string name="quick_lv_retry">加载失败,请点击重试</string>
 
 
+    <string name="err404">无法找到指定位置的资源</string>
+    <string name="err500">内部服务器错误</string>
+    <string name="err502">网关错误</string>
+    <string name="errDefault">网络错误</string>
+    <string name="errTimeout">网络连接超时</string>
+
+
 </resources>

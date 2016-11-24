@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/QuickDevApp.iml" filepath="$PROJECT_DIR$/QuickDevApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dagger/dagger.iml" filepath="$PROJECT_DIR$/dagger/dagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/quicklib/quicklib.iml" filepath="$PROJECT_DIR$/quicklib/quicklib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+    </modules>
+  </component>
+</project>

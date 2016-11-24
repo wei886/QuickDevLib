@@ -9,8 +9,8 @@ android {
     defaultConfig {
         minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
         targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
-        versionCode VERSION_CODE as int
-        versionName VERSION_NAME
+        versionCode 2 as int
+        versionName "0.0.3"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -32,77 +32,15 @@ dependencies {
     //
     testCompile "junit:junit:$rootProject.ext.junitVersion"
     //
-
     compile "com.android.support:recyclerview-v7:$rootProject.ext.supportLibraryVersion"
+    //okHttp
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.2.0'
+    compile 'com.alibaba:fastjson:1.2.20'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
 }
 
-def siteUrl = 'https://github.com/wei886/QuickDevLib' // 项目的主页
-def gitUrl = 'https://github.com/wei886/QuickDevLib.git' // Git 仓库的 url
-// Maven Group ID for the artifact，填你唯一的groupid，
-// 强烈建议填写`com.github.yourusername`,其中 yourusername 为你 github 用户名
-group = "com.github.wei886.quickDev"
-install {
-    repositories.mavenInstaller {
-        // This generates POM.xml with proper parameters
-        pom {
-            project {
-                packaging 'aar'
-                // Add your description here
-                name 'Android Quicker Dev Lib' //项目描述
-                url siteUrl
-                // Set your license
-                licenses {
-                    license {
-                        name 'The Apache Software License, Version 2.0'
-                        url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    }
-                }
-                developers {
-                    developer {
-                        id 'wei886'    //填写的一些基本信息
-                        name 'wei886'
-                        email '742305574@qq.com'
-                    }
-                }
-                scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
-                }
-            }
-        }
-    }
-}
-task sourcesJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier = 'sources'
-}
-task javadoc(type: Javadoc) {
-    options.encoding = "utf-8"
-    source = android.sourceSets.main.java.srcDirs
-    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-}
-task javadocJar(type: Jar, dependsOn: javadoc) {
-    classifier = 'javadoc'
-    from javadoc.destinationDir
-}
-artifacts {
-    archives javadocJar
-    archives sourcesJar
-}
-Properties properties = new Properties()
-properties.load(project.rootProject.file('local.properties').newDataInputStream())
-bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
-    configurations = ['archives']
-    pkg {
-        repo = "maven"
-        name = "QuickDevLib"    //发布到JCenter上的项目名字
-        websiteUrl = siteUrl
-        vcsUrl = gitUrl
-        licenses = ["Apache-2.0"]
-        publish = true
-    }
-}
 apply plugin: 'maven'

@@ -2,20 +2,21 @@ package quickdev.com.quick;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import ui.adapter.QuickRVBaseAdapter;
+import ui.adapter.BaseRVAdapter;
 
 /**
  * Created by Administrator on 2016/9/28.
  */
 
-public class TestListFragmentAdapter extends QuickRVBaseAdapter {
+public class TestListFragmentAdapter extends BaseRVAdapter {
     private final Context context;
     private final ArrayList list;
 
@@ -41,6 +42,7 @@ public class TestListFragmentAdapter extends QuickRVBaseAdapter {
 
     @Override
     public int setItemCount() {
+        Log.e("cccc","size="+list.size());
         return list == null ? 0 : list.size();
     }
 
@@ -52,10 +54,10 @@ public class TestListFragmentAdapter extends QuickRVBaseAdapter {
             initView(itemView);
         }
 
-        Button btn;
+        TextView btn;
 
         private void initView(View itemView) {
-            btn = (Button) itemView.findViewById(R.id.button);
+            btn = (TextView) itemView.findViewById(R.id.textView);
         }
     }
 }

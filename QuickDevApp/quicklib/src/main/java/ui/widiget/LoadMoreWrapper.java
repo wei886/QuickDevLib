@@ -18,7 +18,7 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
     private final int TYPE_LOAD_MORE = 1000;
-    private final int TYPE_ITEM = 1001;
+//    private final int TYPE_ITEM = 1001;
 
     public static final int LOADSTATUS_NORMAL = 0;//默认状态
     public static final int LOADSTATUS_LOADING = 1;//正在加载
@@ -30,7 +30,7 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private RecyclerView.Adapter mInnerAdapter;
 
     private String TAG = LoadMoreWrapper.class.getSimpleName();
-    private FootViewHolder mFootViewHolder;
+    private LoadMoreViewHolder mFootViewHolder;
 
     public LoadMoreWrapper(RecyclerView.Adapter adapter) {
         mInnerAdapter = adapter;
@@ -41,7 +41,7 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
 
         if (getItemViewType(position) == TYPE_LOAD_MORE) {//加载更多footer
-            mFootViewHolder = (FootViewHolder) holder;
+            mFootViewHolder = (LoadMoreViewHolder) holder;
             refreshFooter();
             if ((mStatus == LOADSTATUS_NORMAL || mStatus == LOADSTATUS_ERROR) && mOnLoadMoreListener != null) {
                 mStatus = LOADSTATUS_LOADING;
@@ -130,7 +130,7 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     @Override
     public int getItemViewType(int position) {
-        return isLoadMorePos(position) ? TYPE_LOAD_MORE : TYPE_ITEM;
+        return isLoadMorePos(position) ? TYPE_LOAD_MORE : mInnerAdapter == null ? 0 : mInnerAdapter.getItemViewType(position);
     }
 
     private boolean isLoadMorePos(int position) {
@@ -145,17 +145,17 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
         View inflate;
         if (viewType == TYPE_LOAD_MORE) {
             inflate = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.quick_recyclerview_footer, viewGroup, false);
-            return new FootViewHolder(inflate);
+            return new LoadMoreViewHolder(inflate);
         } else {
             return mInnerAdapter == null ? null : mInnerAdapter.onCreateViewHolder(viewGroup, viewType);
         }
     }
 
-    private class FootViewHolder extends RecyclerView.ViewHolder {
+    private class LoadMoreViewHolder extends RecyclerView.ViewHolder {
         private ProgressBar mLoadBar;
         private TextView mLoadTv;
 
-        public FootViewHolder(View itemView) {
+        public LoadMoreViewHolder(View itemView) {
             super(itemView);
             initView(itemView);
         }
@@ -163,6 +163,12 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
         private void initView(View itemView) {
             mLoadTv = (TextView) itemView.findViewById(R.id.load_tv);
             mLoadBar = (ProgressBar) itemView.findViewById(R.id.load_progress_bar);
+        }
+    }
+
+    public void notifyInnerAdapter() {
+        if (mInnerAdapter != null) {
+            mInnerAdapter.notifyDataSetChanged();
         }
     }
 
