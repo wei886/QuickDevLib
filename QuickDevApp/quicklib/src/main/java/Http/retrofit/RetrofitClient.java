@@ -5,6 +5,7 @@ import Http.config.FastJsonConverterFactory;
 import okhttp3.CookieJar;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 
 /**
  * Created by Administrator on 2016/11/22.
@@ -21,7 +22,8 @@ public enum RetrofitClient implements ApiConstacts {
         retrofit = new Retrofit.Builder().
                 client(mOkhttpClient).
                 addConverterFactory(new FastJsonConverterFactory()).
-                baseUrl(BASE_URL).build();
+                addCallAdapterFactory(RxJavaCallAdapterFactory.create()).
+                baseUrl(BASE_URL_DOUBAN).build();
     }
 
 

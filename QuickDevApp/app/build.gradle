@@ -4,7 +4,7 @@ android {
 
 
     compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
-    buildToolsVersion  ANDROID_BUILD_TOOLS_VERSION
+    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
 
     defaultConfig {
         applicationId "quickdev.com.quickdevapp"
@@ -20,6 +20,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    sourceSets { main { jni.srcDirs = ['src/main/jni', 'src/main/jni/'] } }
 }
 
 dependencies {
@@ -29,4 +36,6 @@ dependencies {
     })
     testCompile "junit:junit:$rootProject.ext.junitVersion"
     compile project(path: ':quicklib')
+
+
 }

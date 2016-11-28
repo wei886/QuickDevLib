@@ -17,6 +17,8 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import rx.Observable;
 import rx.Subscriber;
+import rx.android.schedulers.AndroidSchedulers;
+import rx.schedulers.Schedulers;
 import ui.activity.BaseActivity;
 
 public class RetActivity extends BaseActivity {
@@ -37,18 +39,12 @@ public class RetActivity extends BaseActivity {
         mBtnRetrofitGet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
                 Retrofit retrofit = RetrofitClient.INSTANCE.getRetrofit();
-
                 MovieceService movieceService = retrofit.create(MovieceService.class);
                 final Call<List<MovieItem>> call = movieceService.getMovieListByAutor("张艺谋", "", "0", "100");
-
-
                 Observable.create(new Observable.OnSubscribe<Response<List<MovieItem>>>() {
                     @Override
                     public void call(Subscriber<? super Response<List<MovieItem>>> subscriber) {
-
                         try {
                             Response<List<MovieItem>> response = call.execute();
                             subscriber.onNext(response);
@@ -57,21 +53,20 @@ public class RetActivity extends BaseActivity {
 
                         }
                     }
-                }).subscribeOn(androids).subscribe(new Subscriber<Response<List<MovieItem>>>() {
+                }).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Subscriber<Response<List<MovieItem>>>() {
                     @Override
                     public void onCompleted() {
-
-
+                        Log.e("aa", "o111=");
                     }
 
                     @Override
                     public void onError(Throwable e) {
-
+                        Log.e("aa", "o1=" + e.getMessage().toString());
                     }
 
                     @Override
                     public void onNext(Response<List<MovieItem>> o) {
-                        Log.e("", "" + o);
+                        Log.e("aa", "o=" + o);
                     }
                 });
 

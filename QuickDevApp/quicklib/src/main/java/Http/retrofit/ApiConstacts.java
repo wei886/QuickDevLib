@@ -5,5 +5,5 @@ package Http.retrofit;
  */
 
 public interface ApiConstacts {
-      String BASE_URL = "https://api.douban.com/";
+      String BASE_URL_DOUBAN = "https://api.douban.com/";
 }
