@@ -63,16 +63,15 @@ public abstract class BaseListFragment extends Fragment implements SwipeRefreshL
      * 请求数据成功通知刷新footer状态
      *
      * @param ResponseList
-     * @param allData      总的数据用于判断页数
      */
-    public void notifyDataRequestSuccess(List ResponseList, List allData) {
+    public void notifyDataRequestSuccess(List ResponseList) {
         if (mSwipeRefreshLayout.isRefreshing())
             mSwipeRefreshLayout.setRefreshing(false);
         if (null != ResponseList) {
-            int mCurrentPage = 0; //当前第几页
-            if (allData != null) {
-                mCurrentPage = allData.size() / CommonConfig.PAGE_SIZE;
-            }
+//            int mCurrentPage = 0; //当前第几页
+//            if (allData != null) {
+//                mCurrentPage = allData.size() / CommonConfig.PAGE_SIZE;
+//            }
             if (ResponseList.size() < CommonConfig.PAGE_SIZE) {
 //                if (mCurrentPage == 0) {//第一次未超过一页数据不显示footer
 //                    mLoadMoreWrapper.setLoadStatus(LoadMoreWrapper.LOADSTATUS_LESS_ONE);
@@ -155,7 +154,7 @@ public abstract class BaseListFragment extends Fragment implements SwipeRefreshL
     private void setupView(View view) {
         mRecyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
         mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout);
-        mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(R.color.color14));
+        mSwipeRefreshLayout.setColorSchemeColors(getResources().getColor(android.R.color.black));
         mSwipeRefreshLayout.setOnRefreshListener(this);
         mSwipeRefreshLayout.setProgressViewOffset(true, 0, getResources().getDimensionPixelSize(R.dimen.quick_srlayout_offset));
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(getActivity());

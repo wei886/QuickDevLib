@@ -26,7 +26,7 @@ task clean(type: Delete) {
 
 ext {
     // App dependencies
-    supportLibraryVersion = '23.0.1'
+    supportLibraryVersion = '24.2.1'
     junitVersion = '4.12'
     gsonVersion = '2.7'
 }

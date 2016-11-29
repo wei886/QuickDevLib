@@ -1,1 +1,1 @@
-include ':app', ':quicklib', ':dagger', ':test'
+include ':app', ':quicklib', ':dagger', ':test', ':eyepetizer'

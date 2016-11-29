@@ -2,4 +2,7 @@
 
     <dimen name="quick_srlayout_offset">60dp</dimen>
 
+
+    <dimen name="text_size_normal">18sp</dimen>
+
 </resources>

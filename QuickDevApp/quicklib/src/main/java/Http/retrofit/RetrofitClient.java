@@ -23,7 +23,7 @@ public enum RetrofitClient implements ApiConstacts {
                 client(mOkhttpClient).
                 addConverterFactory(new FastJsonConverterFactory()).
                 addCallAdapterFactory(RxJavaCallAdapterFactory.create()).
-                baseUrl(BASE_URL_DOUBAN).build();
+                baseUrl(BASE_URL_EYEPETIZER).build();
     }
 
 
