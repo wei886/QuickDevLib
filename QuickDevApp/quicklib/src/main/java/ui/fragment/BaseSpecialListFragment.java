@@ -14,16 +14,18 @@ import android.view.ViewGroup;
 import java.util.List;
 
 import quickdev.com.quicklib.R;
-import ui.common.CommonConfig;
 import ui.widiget.LoadMoreWrapper;
 
-public abstract class BaseListFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
+/**
+ *  针对不是 CommonConfig.PAGE_SIZE 加载更多
+ */
+public abstract class BaseSpecialListFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
 
 
     private LoadMoreWrapper mLoadMoreWrapper;
     private SwipeRefreshLayout mSwipeRefreshLayout;
 
-    private final String TAG = BaseListFragment.class.getSimpleName();
+    private final String TAG = BaseSpecialListFragment.class.getSimpleName();
 
     public final int REQUEST_REFRESH = 0; //下拉刷新
     public final int REQUEST_lOAD_MORE = 1; //加载更多
@@ -31,7 +33,7 @@ public abstract class BaseListFragment extends Fragment implements SwipeRefreshL
     private RecyclerView mRecyclerView;
 
 
-    public BaseListFragment() {
+    public BaseSpecialListFragment() {
         // Required empty public constructor
     }
 
@@ -67,20 +69,8 @@ public abstract class BaseListFragment extends Fragment implements SwipeRefreshL
     public void notifyDataRequestSuccess(List ResponseList) {
         if (mSwipeRefreshLayout.isRefreshing())
             mSwipeRefreshLayout.setRefreshing(false);
-        if (null != ResponseList) {
-//            int mCurrentPage = 0; //当前第几页
-//            if (allData != null) {
-//                mCurrentPage = allData.size() / CommonConfig.PAGE_SIZE;
-//            }
-            if (ResponseList.size() < CommonConfig.PAGE_SIZE) {
-//                if (mCurrentPage == 0) {//第一次未超过一页数据不显示footer
-//                    mLoadMoreWrapper.setLoadStatus(LoadMoreWrapper.LOADSTATUS_LESS_ONE);
-//                } else {
-                    mLoadMoreWrapper.setLoadStatus(LoadMoreWrapper.LOADSTATUS_DONE);//全部加载完成
-//                }
-            } else {
+        if (null != ResponseList && !ResponseList.isEmpty()) {
                 mLoadMoreWrapper.setLoadStatus(LoadMoreWrapper.LOADSTATUS_NORMAL);
-            }
         } else {
             mLoadMoreWrapper.setLoadStatus(LoadMoreWrapper.LOADSTATUS_DONE);
         }
@@ -124,9 +114,9 @@ public abstract class BaseListFragment extends Fragment implements SwipeRefreshL
                 }
             });
         }
-
-        initData();
         mSwipeRefreshLayout.setRefreshing(true);
+        initData();
+
     }
 
 

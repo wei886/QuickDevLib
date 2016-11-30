@@ -27,7 +27,7 @@
             android:id="@+id/rb_one"
             style="@style/TabRadioButton"
             android:checked="true"
-            android:drawableTop="@drawable/selector_tab_feed"
+            android:drawableTop="@drawable/selector_tab_hot"
             android:text="one" />
 
         <RadioButton

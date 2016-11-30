@@ -17,6 +17,7 @@ public interface FragmentFeedPresent extends BasePresenterImpl {
      * @return
      */
     void getDailyData();
+    void getDailyData(long date);
 
 
     interface View {

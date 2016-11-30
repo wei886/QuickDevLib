@@ -1,6 +1,7 @@
 package ui.widiget;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,7 +40,7 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-
+        Log.e(TAG,"position--="+position);
         if (getItemViewType(position) == TYPE_LOAD_MORE) {//加载更多footer
             mFootViewHolder = (LoadMoreViewHolder) holder;
             refreshFooter();
@@ -168,8 +169,50 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     public void notifyInnerAdapter() {
         if (mInnerAdapter != null) {
-            mInnerAdapter.notifyDataSetChanged();
+            mInnerAdapter.notifyItemRangeChanged(0,mInnerAdapter.getItemCount());
         }
+    }
+
+    @Override
+    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+        mInnerAdapter.onAttachedToRecyclerView(recyclerView);
+    }
+
+    @Override
+    public void onDetachedFromRecyclerView(RecyclerView recyclerView) {
+        mInnerAdapter.onDetachedFromRecyclerView(recyclerView);
+    }
+
+    @Override
+    public void onViewAttachedToWindow(RecyclerView.ViewHolder holder) {
+        mInnerAdapter.onViewAttachedToWindow(holder);
+    }
+
+    @Override
+    public void onViewDetachedFromWindow(RecyclerView.ViewHolder holder) {
+        mInnerAdapter.onViewDetachedFromWindow(holder);
+    }
+
+    @Override
+    public void onViewRecycled(RecyclerView.ViewHolder holder) {
+        super.onViewRecycled(holder);
+    }
+
+    @Override
+    public boolean onFailedToRecycleView(RecyclerView.ViewHolder holder) {
+        return mInnerAdapter.onFailedToRecycleView(holder);
+    }
+
+
+    @Override
+    public void unregisterAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
+        mInnerAdapter.unregisterAdapterDataObserver(observer);
+    }
+
+
+    @Override
+    public void registerAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
+        mInnerAdapter.registerAdapterDataObserver(observer);
     }
 
 }

@@ -3,7 +3,6 @@ package ui.adapter;
 import android.content.Context;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -14,7 +13,7 @@ import java.util.ArrayList;
  */
 public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private final int TYPE_BASE_ITEM = -302;
+    //    private final int TYPE_BASE_ITEM = -302;
     private final int TYPE_BASE_HEAD = -300;
     private final int TYPE_BASE_FOOTER = -301;
     public Context context;
@@ -34,9 +33,9 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int i) {
-        Log.e("TAG", "onBindViewHolder_i=" + i);
+//        Log.e("TAG", "onBindViewHolder_i=" + i);
         int itemType = getItemViewType(i);
-        if (itemType == TYPE_BASE_ITEM) {
+        if (itemType == setItemViewType(i)) {
             i -= getHeadSize();
             final int finalI = i;
             if (onItemClickLintener != null) {
@@ -65,30 +64,18 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         if (viewType == TYPE_BASE_FOOTER) {
-            Log.e(TAG, "1111111111111111111111111");
-
             return new SimpleHolder(mFooterView);
         } else if (isHeadItemViewType(viewType)) {
-
             View header = getHeaderByViewType(viewType);
-            Log.e(TAG, "2222222222222222222 header" + header);
             return header == null ? null : new SimpleHolder(header);
         } else {
-            Log.e(TAG, "33333333333333");
-
             return onCreateHolder(viewGroup, viewType);
         }
     }
 
     @Override
     public int getItemViewType(int position) {
-        Log.e(TAG, "getItemViewType_position1=" + position);
-        Log.e(TAG, "getItemViewType_position2=" + isHeader(position) );
-        Log.e(TAG, "getItemViewType_position3=" + getHeadItemViewType(position)  );
-        Log.e(TAG, "getItemViewType_position4=" + isFooter(position)   );
-        Log.e(TAG, "aaaaaaaaaaaaaaaa=" + (isHeader(position) ? getHeadItemViewType(position) : isFooter(position) ? TYPE_BASE_FOOTER : TYPE_BASE_ITEM)  );
-
-        return isHeader(position) ? getHeadItemViewType(position) : isFooter(position) ? TYPE_BASE_FOOTER : TYPE_BASE_ITEM;
+        return isHeader(position) ? getHeadItemViewType(position) : isFooter(position) ? TYPE_BASE_FOOTER : setItemViewType(position);
     }
 
     private boolean isHeadItemViewType(int viewType) {
@@ -96,7 +83,7 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     }
 
     private int getHeadItemViewType(int position) {
-        return !mHeadItemViewTypes.isEmpty() && mHeadItemViewTypes.size() > position ? mHeadItemViewTypes.get(position) : TYPE_BASE_ITEM;
+        return !mHeadItemViewTypes.isEmpty() && mHeadItemViewTypes.size() > position ? mHeadItemViewTypes.get(position) : setItemViewType(position);
     }
 
     private View getHeaderByViewType(int viewType) {
@@ -111,7 +98,7 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
 
     @Override
     public int getItemCount() {
-        Log.e(TAG,"BBBBB=" +setItemCount() + getHeadSize() + getFooterSize());
+//        Log.e(TAG,"BBBBB=" +setItemCount() + getHeadSize() + getFooterSize());
         return setItemCount() + getHeadSize() + getFooterSize();
     }
 
@@ -121,6 +108,8 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     public abstract int setItemCount();//data的数据个数
 
     public abstract void onBindHolder(RecyclerView.ViewHolder holder, int i);
+
+    public abstract int setItemViewType(int position);
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
@@ -164,7 +153,7 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
     }
 
 
-    class SimpleHolder extends RecyclerView.ViewHolder {
+    public static class SimpleHolder extends RecyclerView.ViewHolder {
         public SimpleHolder(View itemView) {
             super(itemView);
         }

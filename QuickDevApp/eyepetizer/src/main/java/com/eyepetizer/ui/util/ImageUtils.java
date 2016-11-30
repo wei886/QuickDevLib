@@ -16,6 +16,6 @@ public class ImageUtils {
 
    public static void disPLay(Context context , ImageView imageView,String url){
 
-       Picasso.with(context) .load(url).resize(50, 50).centerCrop().into(imageView);
+       Picasso.with(context) .load(url).into(imageView);
    }
 }

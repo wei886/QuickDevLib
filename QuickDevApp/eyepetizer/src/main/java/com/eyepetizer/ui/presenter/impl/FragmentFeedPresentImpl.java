@@ -32,8 +32,7 @@ public class FragmentFeedPresentImpl implements FragmentFeedPresent {
 
     @Override
     public void getDailyData() {
-
-        DailyApi dailyApi = RetrofitClient.INSTANCE.getRetrofit().create(DailyApi.class);
+         DailyApi dailyApi = RetrofitClient.INSTANCE.getRetrofit().create(DailyApi.class);
 
         Subscription subscribe = dailyApi.getDaily().compose(RxUtil.<DailyInfo>applySchedulers()).subscribe(new Subscriber<DailyInfo>() {
             @Override
@@ -55,6 +54,33 @@ public class FragmentFeedPresentImpl implements FragmentFeedPresent {
 
 
         mComsiteSubscription.add(subscribe);
+
+    }
+
+    @Override
+    public void getDailyData(long date) {
+        DailyApi dailyApi = RetrofitClient.INSTANCE.getRetrofit().create(DailyApi.class);
+        Subscription subscribe = dailyApi.getDaily(date).compose(RxUtil.<DailyInfo>applySchedulers()).subscribe(new Subscriber<DailyInfo>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+                Log.e(TAG, "FragmentFeedPresentImpl_getDailyData1 e=" + e.getMessage().toString());
+                view.gotDataFailure("获取每日数据失败");
+            }
+
+            @Override
+            public void onNext(DailyInfo dailyInfo) {
+                view.gotDataSuccess(dailyInfo);
+
+            }
+        });
+
+        mComsiteSubscription.add(subscribe);
+
 
     }
 

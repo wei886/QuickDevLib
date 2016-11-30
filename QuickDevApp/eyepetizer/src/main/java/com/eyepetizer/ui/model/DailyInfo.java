@@ -1,5 +1,8 @@
 package com.eyepetizer.ui.model;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.List;
 
 /**
@@ -65,15 +68,8 @@ public class DailyInfo {
         this.issueList = issueList;
     }
 
-    public static class IssueListBean {
-        /**
-         * releaseTime : 1480381200000
-         * type : morning
-         * date : 1480381200000
-         * publishTime : 1480381200000
-         * itemList : [{"type":"video","data":{"dataType":"VideoBeanForClient","id":10516,"title":"360°全景延时影片「复古巴黎」","description":"复古的手工上色，瞬间带你穿越去 20 世纪初的巴黎街头，那个「\u200bLa Belle Epoque」。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"创意","author":{"id":270,"icon":"http://img.kaiyanapp.com/8b2e623be7f5956fd60fc2986bafab74.jpeg?imageMogr2/quality/60","name":"All VR Films","description":"来自巴黎的360°VR影像制作公司 ∣ www.allvr.fr","link":"","latestReleaseTime":1477456388000,"videoNum":4,"adTrack":null,"follow":{"itemType":"author","itemId":270,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/d58edef02cc209574cc40882beceb69f.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=default","duration":126,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10516","forWeibo":"http://wandou.im/37oba4"},"releaseTime":1477456388000,"playInfo":[{"height":720,"width":1440,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=normal"},{"height":1080,"width":2160,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=high"}],"consumption":{"collectionCount":650,"shareCount":1144,"replyCount":22},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":658,"name":"360°全景","actionUrl":"eyepetizer://tag/658/?title=360%C2%B0%E5%85%A8%E6%99%AF","adTrack":null},{"id":370,"name":"欧洲","actionUrl":"eyepetizer://tag/370/?title=%E6%AC%A7%E6%B4%B2","adTrack":null},{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null}],"type":"PANORAMIC","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":{"text":"360°全景","card":"360°全景","detail":"360°全景"},"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10194,"title":"喂养猫的好奇心","description":"尤金奥尼尔在剧本中写过：curiosity killed a cat（好奇心害死猫），每只猫星人都是好奇宝宝与作死小能手，伟嘉妙鲜包却要告诉人们，猫咪的好奇心不是一件坏事，说不定能帮它找到藏在厨房的小鱼干呢。From whiskas","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/1d5cd526be9a751617efdf5e51bb6a2d.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/1d5cd526be9a751617efdf5e51bb6a2d.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/bf2310314f491e832741a0e976a97321.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10194&editionType=default","duration":40,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10194","forWeibo":"http://wandou.im/359s1t"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10194&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10194&editionType=high"}],"consumption":{"collectionCount":235,"shareCount":484,"replyCount":15},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":538,"name":"喵星人","actionUrl":"eyepetizer://tag/538/?title=%E5%96%B5%E6%98%9F%E4%BA%BA","adTrack":null},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null},{"id":498,"name":"萌","actionUrl":"eyepetizer://tag/498/?title=%E8%90%8C","adTrack":null},{"id":32,"name":"萌宠","actionUrl":"eyepetizer://tag/32/?title=%E8%90%8C%E5%AE%A0","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10883,"title":"高山滑雪玩腻了，我们高空滑云","description":"在高山滑雪已经无法满足爱好极限的作死青年们，它们想出了全新的玩法：高空滑云。带着雪板从 4500 米高空跃下拥抱卓越雪山，向速度致敬！（BGM：Should I Stay or Go \u2014 The Needy）From Adrenaline Channel","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"运动","author":null,"cover":{"feed":"http://img.kaiyanapp.com/98637a768af28989e6722b3788a8175c.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/98637a768af28989e6722b3788a8175c.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/c29f8f6bdca983bca56126feef909af4.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10883&editionType=default","duration":212,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10883","forWeibo":"http://wandou.im/3azouo"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10883&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10883&editionType=high"}],"consumption":{"collectionCount":230,"shareCount":393,"replyCount":14},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":4,"name":"运动","actionUrl":"eyepetizer://tag/4/?title=%E8%BF%90%E5%8A%A8","adTrack":null},{"id":514,"name":"城会玩","actionUrl":"eyepetizer://tag/514/?title=%E5%9F%8E%E4%BC%9A%E7%8E%A9","adTrack":null},{"id":280,"name":"滑雪","actionUrl":"eyepetizer://tag/280/?title=%E6%BB%91%E9%9B%AA","adTrack":null},{"id":304,"name":"高空","actionUrl":"eyepetizer://tag/304/?title=%E9%AB%98%E7%A9%BA","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11263,"title":"史上超超超快大片已上线","description":"这是一条超超超快的大片儿，魔性得根本停不下来！怎么这么快，怎么这么快，就是这么快，就是这么快，伸出你的手跟上我的节奏，呦呦~","provider":{"name":"投稿","alias":"PGC2","icon":""},"category":"开胃","author":null,"cover":{"feed":"http://img.kaiyanapp.com/1f27faaaa5514aea9d28de970e7efe1a.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/1f27faaaa5514aea9d28de970e7efe1a.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/e759b55df057f1a904d6c38f3424472c.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11263&editionType=default","duration":102,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11263","forWeibo":"http://wandou.im/3epncs"},"releaseTime":1480350902000,"playInfo":[{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11263&editionType=high"}],"consumption":{"collectionCount":202,"shareCount":424,"replyCount":34},"campaign":null,"waterMarks":null,"adTrack":[{"organization":"miaozhen","viewUrl":"","clickUrl":"http://e.cn.miaozhen.com/r/k=2034497&p=74Atg&dx=__IPDX__&rt=2&ns=__IP__&ni=__IESID__&v=__LOC__&xa=__ADPLATFORM__&o="}],"tags":[],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":{"text":"广告"},"label":{"text":"广告","card":"广告","detail":"广告"},"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10506,"title":"日夜轮转，山上的星空","description":"这支延时摄影短片来自挪威著名摄影师 Terje Sorgjerd，拍摄地点位于西班牙的最高峰\u2014\u2014 El Teide 泰德峰。为了捕捉到完美画面，他在这 7 天中只睡了 10 小时，一切美好都来之不易。From TSO Photography","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"旅行","author":null,"cover":{"feed":"http://img.kaiyanapp.com/00ed86faa91106a4974e59b292ee1b7e.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/00ed86faa91106a4974e59b292ee1b7e.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/de5b0373a6b0960846a4d9dffa151f2e.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10506&editionType=default","duration":188,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10506","forWeibo":"http://wandou.im/37k7jg"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10506&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10506&editionType=high"}],"consumption":{"collectionCount":475,"shareCount":670,"replyCount":11},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":9344,"title":"为何人类不无性繁殖","description":"自然界中存在一种可以无性繁殖的雌性鞭尾蜥蜴，孕育的后代与亲代基因完全一致。这种繁殖方式效率很高，但为什么人类不通过这种方式繁殖呢？「棘轮理论」和「红皇后假说」为你解释。From @阿尔法小分队科教组","provider":{"name":"哔哩哔哩动画","alias":"bilibili","icon":"http://img.kaiyanapp.com/b968890a2b3e9ab5ae234175681f8cd4.png"},"category":"科普","author":null,"cover":{"feed":"http://img.kaiyanapp.com/49848234c4c1a5325379c844218881b4.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/49848234c4c1a5325379c844218881b4.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/ff14b593318632945027f96d246da82d.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9344&editionType=default","duration":228,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=9344","forWeibo":"http://wandou.im/2yjq79"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9344&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9344&editionType=high"}],"consumption":{"collectionCount":161,"shareCount":83,"replyCount":12},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":44,"name":"科普","actionUrl":"eyepetizer://tag/44/?title=%E7%A7%91%E6%99%AE","adTrack":null},{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null},{"id":532,"name":"生命","actionUrl":"eyepetizer://tag/532/?title=%E7%94%9F%E5%91%BD","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11147,"title":"良心 3D 动画 ：酒精怪物","description":"一位隐居垂钓的作家在几乎冰封的湖面上垂钓时，被来自威士忌瓶底的奇异生物打断。这是三位导演在悉尼科技大学学习的最后一年制作的学生作品，揭示「酒精可以让人变得不可理喻」的现实。From The The CGBros","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"动画","author":null,"cover":{"feed":"http://img.kaiyanapp.com/15435f8b3310734535402e57b5e946b3.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15435f8b3310734535402e57b5e946b3.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/d08c884abb0106b1561979c45abe5336.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11147&editionType=default","duration":405,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11147","forWeibo":"http://wandou.im/3dszcz"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11147&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11147&editionType=high"}],"consumption":{"collectionCount":408,"shareCount":204,"replyCount":11},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null},{"id":56,"name":"3D","actionUrl":"eyepetizer://tag/56/?title=3D","adTrack":null},{"id":124,"name":"魔幻","actionUrl":"eyepetizer://tag/124/?title=%E9%AD%94%E5%B9%BB","adTrack":null},{"id":530,"name":"人生","actionUrl":"eyepetizer://tag/530/?title=%E4%BA%BA%E7%94%9F","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11232,"title":"自制高逼格木质手账","description":"实木活页手账！工匠精神就是明明可以靠颜值，却偏要有内涵。金属质感的背脊，感受时间的冷酷；胡桃漆木的外表，触摸岁月的沉淀。工匠实验室为你量身打造的实木手账，你离精致的生活，就差这一本。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"生活","author":{"id":275,"icon":"http://img.kaiyanapp.com/98f0a2b062b97645dd0ab651b63fdd4a.png","name":"罐头视频","description":"专注于生活品质提升的移动视频品牌，以生活类技能为切入点，现有罐头小厨、夹脑计划、星期五来啦、举起爪儿来、工匠实验室、你敢答应吗六个固定栏目。","link":"","latestReleaseTime":1480392376000,"videoNum":13,"adTrack":null,"follow":{"itemType":"author","itemId":275,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/12aa53255e5e9575c1b8e1ed58c7e8f9.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/12aa53255e5e9575c1b8e1ed58c7e8f9.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/777ace11d226444afb5c5127306aba74.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11232&editionType=default","duration":115,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11232","forWeibo":"http://wandou.im/3enb5e"},"releaseTime":1480305334000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11232&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11232&editionType=high"}],"consumption":{"collectionCount":186,"shareCount":67,"replyCount":17},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":666,"name":"生活","actionUrl":"eyepetizer://tag/666/?title=%E7%94%9F%E6%B4%BB","adTrack":null},{"id":178,"name":"手工","actionUrl":"eyepetizer://tag/178/?title=%E6%89%8B%E5%B7%A5","adTrack":null},{"id":46,"name":"教程","actionUrl":"eyepetizer://tag/46/?title=%E6%95%99%E7%A8%8B","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}}]
-         * count : 8
-         */
+    public static class IssueListBean implements Parcelable {
+
 
         private long releaseTime;
         private String type;
@@ -81,6 +77,42 @@ public class DailyInfo {
         private long publishTime;
         private int count;
         private List<ItemListBean> itemList;
+
+        protected IssueListBean(Parcel in) {
+            releaseTime = in.readLong();
+            type = in.readString();
+            date = in.readLong();
+            publishTime = in.readLong();
+            count = in.readInt();
+            itemList = in.createTypedArrayList(ItemListBean.CREATOR);
+        }
+
+        @Override
+        public void writeToParcel(Parcel dest, int flags) {
+            dest.writeLong(releaseTime);
+            dest.writeString(type);
+            dest.writeLong(date);
+            dest.writeLong(publishTime);
+            dest.writeInt(count);
+            dest.writeTypedList(itemList);
+        }
+
+        @Override
+        public int describeContents() {
+            return 0;
+        }
+
+        public static final Creator<IssueListBean> CREATOR = new Creator<IssueListBean>() {
+            @Override
+            public IssueListBean createFromParcel(Parcel in) {
+                return new IssueListBean(in);
+            }
+
+            @Override
+            public IssueListBean[] newArray(int size) {
+                return new IssueListBean[size];
+            }
+        };
 
         public long getReleaseTime() {
             return releaseTime;
@@ -130,14 +162,27 @@ public class DailyInfo {
             this.itemList = itemList;
         }
 
-        public static class ItemListBean {
-            /**
-             * type : video
-             * data : {"dataType":"VideoBeanForClient","id":10516,"title":"360°全景延时影片「复古巴黎」","description":"复古的手工上色，瞬间带你穿越去 20 世纪初的巴黎街头，那个「\u200bLa Belle Epoque」。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"创意","author":{"id":270,"icon":"http://img.kaiyanapp.com/8b2e623be7f5956fd60fc2986bafab74.jpeg?imageMogr2/quality/60","name":"All VR Films","description":"来自巴黎的360°VR影像制作公司 ∣ www.allvr.fr","link":"","latestReleaseTime":1477456388000,"videoNum":4,"adTrack":null,"follow":{"itemType":"author","itemId":270,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/d58edef02cc209574cc40882beceb69f.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=default","duration":126,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10516","forWeibo":"http://wandou.im/37oba4"},"releaseTime":1477456388000,"playInfo":[{"height":720,"width":1440,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=normal"},{"height":1080,"width":2160,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=high"}],"consumption":{"collectionCount":650,"shareCount":1144,"replyCount":22},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":658,"name":"360°全景","actionUrl":"eyepetizer://tag/658/?title=360%C2%B0%E5%85%A8%E6%99%AF","adTrack":null},{"id":370,"name":"欧洲","actionUrl":"eyepetizer://tag/370/?title=%E6%AC%A7%E6%B4%B2","adTrack":null},{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null}],"type":"PANORAMIC","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":{"text":"360°全景","card":"360°全景","detail":"360°全景"},"collected":false,"played":false}
-             */
+        public static class ItemListBean implements  Parcelable {
+
 
             private String type;
             private DataBean data;
+
+            protected ItemListBean(Parcel in) {
+                type = in.readString();
+            }
+
+            public static final Creator<ItemListBean> CREATOR = new Creator<ItemListBean>() {
+                @Override
+                public ItemListBean createFromParcel(Parcel in) {
+                    return new ItemListBean(in);
+                }
+
+                @Override
+                public ItemListBean[] newArray(int size) {
+                    return new ItemListBean[size];
+                }
+            };
 
             public String getType() {
                 return type;
@@ -155,37 +200,18 @@ public class DailyInfo {
                 this.data = data;
             }
 
+            @Override
+            public int describeContents() {
+                return 0;
+            }
+
+            @Override
+            public void writeToParcel(Parcel dest, int flags) {
+                dest.writeString(type);
+            }
+
             public static class DataBean {
-                /**
-                 * dataType : VideoBeanForClient
-                 * id : 10516
-                 * title : 360°全景延时影片「复古巴黎」
-                 * description : 复古的手工上色，瞬间带你穿越去 20 世纪初的巴黎街头，那个「​La Belle Epoque」。
-                 * provider : {"name":"PGC","alias":"PGC","icon":""}
-                 * category : 创意
-                 * author : {"id":270,"icon":"http://img.kaiyanapp.com/8b2e623be7f5956fd60fc2986bafab74.jpeg?imageMogr2/quality/60","name":"All VR Films","description":"来自巴黎的360°VR影像制作公司 ∣ www.allvr.fr","link":"","latestReleaseTime":1477456388000,"videoNum":4,"adTrack":null,"follow":{"itemType":"author","itemId":270,"followed":false}}
-                 * cover : {"feed":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/d58edef02cc209574cc40882beceb69f.jpeg?imageMogr2/quality/60","sharing":null}
-                 * playUrl : http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=default
-                 * duration : 126
-                 * webUrl : {"raw":"http://www.eyepetizer.net/detail.html?vid=10516","forWeibo":"http://wandou.im/37oba4"}
-                 * releaseTime : 1477456388000
-                 * playInfo : [{"height":720,"width":1440,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=normal"},{"height":1080,"width":2160,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=high"}]
-                 * consumption : {"collectionCount":650,"shareCount":1144,"replyCount":22}
-                 * campaign : null
-                 * waterMarks : null
-                 * adTrack : null
-                 * tags : [{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":658,"name":"360°全景","actionUrl":"eyepetizer://tag/658/?title=360%C2%B0%E5%85%A8%E6%99%AF","adTrack":null},{"id":370,"name":"欧洲","actionUrl":"eyepetizer://tag/370/?title=%E6%AC%A7%E6%B4%B2","adTrack":null},{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null}]
-                 * type : PANORAMIC
-                 * idx : 0
-                 * shareAdTrack : null
-                 * favoriteAdTrack : null
-                 * webAdTrack : null
-                 * date : 1480381200000
-                 * promotion : null
-                 * label : {"text":"360°全景","card":"360°全景","detail":"360°全景"}
-                 * collected : false
-                 * played : false
-                 */
+
 
                 private String dataType;
                 private int id;
@@ -215,6 +241,16 @@ public class DailyInfo {
                 private boolean played;
                 private List<PlayInfoBean> playInfo;
                 private List<TagsBean> tags;
+
+                private String text;
+
+                public String getText() {
+                    return text;
+                }
+
+                public void setText(String text) {
+                    this.text = text;
+                }
 
                 public String getDataType() {
                     return dataType;
@@ -440,7 +476,7 @@ public class DailyInfo {
                     this.tags = tags;
                 }
 
-                public static class ProviderBean {
+                public static class ProviderBean implements  Parcelable {
                     /**
                      * name : PGC
                      * alias : PGC
@@ -450,6 +486,24 @@ public class DailyInfo {
                     private String name;
                     private String alias;
                     private String icon;
+
+                    protected ProviderBean(Parcel in) {
+                        name = in.readString();
+                        alias = in.readString();
+                        icon = in.readString();
+                    }
+
+                    public static final Creator<ProviderBean> CREATOR = new Creator<ProviderBean>() {
+                        @Override
+                        public ProviderBean createFromParcel(Parcel in) {
+                            return new ProviderBean(in);
+                        }
+
+                        @Override
+                        public ProviderBean[] newArray(int size) {
+                            return new ProviderBean[size];
+                        }
+                    };
 
                     public String getName() {
                         return name;
@@ -474,9 +528,21 @@ public class DailyInfo {
                     public void setIcon(String icon) {
                         this.icon = icon;
                     }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeString(name);
+                        dest.writeString(alias);
+                        dest.writeString(icon);
+                    }
                 }
 
-                public static class AuthorBean {
+                public static class AuthorBean implements  Parcelable {
                     /**
                      * id : 270
                      * icon : http://img.kaiyanapp.com/8b2e623be7f5956fd60fc2986bafab74.jpeg?imageMogr2/quality/60
@@ -498,6 +564,29 @@ public class DailyInfo {
                     private int videoNum;
                     private Object adTrack;
                     private FollowBean follow;
+
+                    protected AuthorBean(Parcel in) {
+                        id = in.readInt();
+                        icon = in.readString();
+                        name = in.readString();
+                        description = in.readString();
+                        link = in.readString();
+                        latestReleaseTime = in.readLong();
+                        videoNum = in.readInt();
+                        follow = in.readParcelable(FollowBean.class.getClassLoader());
+                    }
+
+                    public static final Creator<AuthorBean> CREATOR = new Creator<AuthorBean>() {
+                        @Override
+                        public AuthorBean createFromParcel(Parcel in) {
+                            return new AuthorBean(in);
+                        }
+
+                        @Override
+                        public AuthorBean[] newArray(int size) {
+                            return new AuthorBean[size];
+                        }
+                    };
 
                     public int getId() {
                         return id;
@@ -571,7 +660,24 @@ public class DailyInfo {
                         this.follow = follow;
                     }
 
-                    public static class FollowBean {
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeInt(id);
+                        dest.writeString(icon);
+                        dest.writeString(name);
+                        dest.writeString(description);
+                        dest.writeString(link);
+                        dest.writeLong(latestReleaseTime);
+                        dest.writeInt(videoNum);
+                        dest.writeParcelable(follow, flags);
+                    }
+
+                    public static class FollowBean implements  Parcelable {
                         /**
                          * itemType : author
                          * itemId : 270
@@ -581,6 +687,24 @@ public class DailyInfo {
                         private String itemType;
                         private int itemId;
                         private boolean followed;
+
+                        protected FollowBean(Parcel in) {
+                            itemType = in.readString();
+                            itemId = in.readInt();
+                            followed = in.readByte() != 0;
+                        }
+
+                        public static final Creator<FollowBean> CREATOR = new Creator<FollowBean>() {
+                            @Override
+                            public FollowBean createFromParcel(Parcel in) {
+                                return new FollowBean(in);
+                            }
+
+                            @Override
+                            public FollowBean[] newArray(int size) {
+                                return new FollowBean[size];
+                            }
+                        };
 
                         public String getItemType() {
                             return itemType;
@@ -605,10 +729,22 @@ public class DailyInfo {
                         public void setFollowed(boolean followed) {
                             this.followed = followed;
                         }
+
+                        @Override
+                        public int describeContents() {
+                            return 0;
+                        }
+
+                        @Override
+                        public void writeToParcel(Parcel dest, int flags) {
+                            dest.writeString(itemType);
+                            dest.writeInt(itemId);
+                            dest.writeByte((byte) (followed ? 1 : 0));
+                        }
                     }
                 }
 
-                public static class CoverBean {
+                public static class CoverBean implements  Parcelable {
                     /**
                      * feed : http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60
                      * detail : http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60
@@ -620,6 +756,24 @@ public class DailyInfo {
                     private String detail;
                     private String blurred;
                     private Object sharing;
+
+                    protected CoverBean(Parcel in) {
+                        feed = in.readString();
+                        detail = in.readString();
+                        blurred = in.readString();
+                    }
+
+                    public static final Creator<CoverBean> CREATOR = new Creator<CoverBean>() {
+                        @Override
+                        public CoverBean createFromParcel(Parcel in) {
+                            return new CoverBean(in);
+                        }
+
+                        @Override
+                        public CoverBean[] newArray(int size) {
+                            return new CoverBean[size];
+                        }
+                    };
 
                     public String getFeed() {
                         return feed;
@@ -652,9 +806,21 @@ public class DailyInfo {
                     public void setSharing(Object sharing) {
                         this.sharing = sharing;
                     }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeString(feed);
+                        dest.writeString(detail);
+                        dest.writeString(blurred);
+                    }
                 }
 
-                public static class WebUrlBean {
+                public static class WebUrlBean implements  Parcelable{
                     /**
                      * raw : http://www.eyepetizer.net/detail.html?vid=10516
                      * forWeibo : http://wandou.im/37oba4
@@ -662,6 +828,23 @@ public class DailyInfo {
 
                     private String raw;
                     private String forWeibo;
+
+                    protected WebUrlBean(Parcel in) {
+                        raw = in.readString();
+                        forWeibo = in.readString();
+                    }
+
+                    public static final Creator<WebUrlBean> CREATOR = new Creator<WebUrlBean>() {
+                        @Override
+                        public WebUrlBean createFromParcel(Parcel in) {
+                            return new WebUrlBean(in);
+                        }
+
+                        @Override
+                        public WebUrlBean[] newArray(int size) {
+                            return new WebUrlBean[size];
+                        }
+                    };
 
                     public String getRaw() {
                         return raw;
@@ -678,9 +861,20 @@ public class DailyInfo {
                     public void setForWeibo(String forWeibo) {
                         this.forWeibo = forWeibo;
                     }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeString(raw);
+                        dest.writeString(forWeibo);
+                    }
                 }
 
-                public static class ConsumptionBean {
+                public static class ConsumptionBean implements Parcelable {
                     /**
                      * collectionCount : 650
                      * shareCount : 1144
@@ -690,6 +884,24 @@ public class DailyInfo {
                     private int collectionCount;
                     private int shareCount;
                     private int replyCount;
+
+                    protected ConsumptionBean(Parcel in) {
+                        collectionCount = in.readInt();
+                        shareCount = in.readInt();
+                        replyCount = in.readInt();
+                    }
+
+                    public static final Creator<ConsumptionBean> CREATOR = new Creator<ConsumptionBean>() {
+                        @Override
+                        public ConsumptionBean createFromParcel(Parcel in) {
+                            return new ConsumptionBean(in);
+                        }
+
+                        @Override
+                        public ConsumptionBean[] newArray(int size) {
+                            return new ConsumptionBean[size];
+                        }
+                    };
 
                     public int getCollectionCount() {
                         return collectionCount;
@@ -714,18 +926,44 @@ public class DailyInfo {
                     public void setReplyCount(int replyCount) {
                         this.replyCount = replyCount;
                     }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeInt(collectionCount);
+                        dest.writeInt(shareCount);
+                        dest.writeInt(replyCount);
+                    }
                 }
 
-                public static class LabelBean {
-                    /**
-                     * text : 360°全景
-                     * card : 360°全景
-                     * detail : 360°全景
-                     */
+                public static class LabelBean  implements Parcelable{
+
 
                     private String text;
                     private String card;
                     private String detail;
+
+                    protected LabelBean(Parcel in) {
+                        text = in.readString();
+                        card = in.readString();
+                        detail = in.readString();
+                    }
+
+                    public static final Creator<LabelBean> CREATOR = new Creator<LabelBean>() {
+                        @Override
+                        public LabelBean createFromParcel(Parcel in) {
+                            return new LabelBean(in);
+                        }
+
+                        @Override
+                        public LabelBean[] newArray(int size) {
+                            return new LabelBean[size];
+                        }
+                    };
 
                     public String getText() {
                         return text;
@@ -750,22 +988,48 @@ public class DailyInfo {
                     public void setDetail(String detail) {
                         this.detail = detail;
                     }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeString(text);
+                        dest.writeString(card);
+                        dest.writeString(detail);
+                    }
                 }
 
-                public static class PlayInfoBean {
-                    /**
-                     * height : 720
-                     * width : 1440
-                     * name : 标清
-                     * type : normal
-                     * url : http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=normal
-                     */
+                public static class PlayInfoBean implements Parcelable {
+
 
                     private int height;
                     private int width;
                     private String name;
                     private String type;
                     private String url;
+
+                    protected PlayInfoBean(Parcel in) {
+                        height = in.readInt();
+                        width = in.readInt();
+                        name = in.readString();
+                        type = in.readString();
+                        url = in.readString();
+                    }
+
+                    public static final Creator<PlayInfoBean> CREATOR = new Creator<PlayInfoBean>() {
+                        @Override
+                        public PlayInfoBean createFromParcel(Parcel in) {
+                            return new PlayInfoBean(in);
+                        }
+
+                        @Override
+                        public PlayInfoBean[] newArray(int size) {
+                            return new PlayInfoBean[size];
+                        }
+                    };
 
                     public int getHeight() {
                         return height;
@@ -806,20 +1070,46 @@ public class DailyInfo {
                     public void setUrl(String url) {
                         this.url = url;
                     }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeInt(height);
+                        dest.writeInt(width);
+                        dest.writeString(name);
+                        dest.writeString(type);
+                        dest.writeString(url);
+                    }
                 }
 
-                public static class TagsBean {
-                    /**
-                     * id : 2
-                     * name : 创意
-                     * actionUrl : eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F
-                     * adTrack : null
-                     */
+                public static class TagsBean implements Parcelable {
 
                     private int id;
                     private String name;
                     private String actionUrl;
                     private Object adTrack;
+
+                    protected TagsBean(Parcel in) {
+                        id = in.readInt();
+                        name = in.readString();
+                        actionUrl = in.readString();
+                    }
+
+                    public static final Creator<TagsBean> CREATOR = new Creator<TagsBean>() {
+                        @Override
+                        public TagsBean createFromParcel(Parcel in) {
+                            return new TagsBean(in);
+                        }
+
+                        @Override
+                        public TagsBean[] newArray(int size) {
+                            return new TagsBean[size];
+                        }
+                    };
 
                     public int getId() {
                         return id;
@@ -851,6 +1141,18 @@ public class DailyInfo {
 
                     public void setAdTrack(Object adTrack) {
                         this.adTrack = adTrack;
+                    }
+
+                    @Override
+                    public int describeContents() {
+                        return 0;
+                    }
+
+                    @Override
+                    public void writeToParcel(Parcel dest, int flags) {
+                        dest.writeInt(id);
+                        dest.writeString(name);
+                        dest.writeString(actionUrl);
                     }
                 }
             }
