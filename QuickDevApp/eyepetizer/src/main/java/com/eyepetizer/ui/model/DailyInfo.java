@@ -15,9 +15,9 @@ public class DailyInfo {
 
 
     /**
-     * issueList : [{"releaseTime":1480381200000,"type":"morning","date":1480381200000,"publishTime":1480381200000,"itemList":[{"type":"video","data":{"dataType":"VideoBeanForClient","id":10516,"title":"360°全景延时影片「复古巴黎」","description":"复古的手工上色，瞬间带你穿越去 20 世纪初的巴黎街头，那个「\u200bLa Belle Epoque」。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"创意","author":{"id":270,"icon":"http://img.kaiyanapp.com/8b2e623be7f5956fd60fc2986bafab74.jpeg?imageMogr2/quality/60","name":"All VR Films","description":"来自巴黎的360°VR影像制作公司 ∣ www.allvr.fr","link":"","latestReleaseTime":1477456388000,"videoNum":4,"adTrack":null,"follow":{"itemType":"author","itemId":270,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/d58edef02cc209574cc40882beceb69f.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=default","duration":126,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10516","forWeibo":"http://wandou.im/37oba4"},"releaseTime":1477456388000,"playInfo":[{"height":720,"width":1440,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=normal"},{"height":1080,"width":2160,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10516&editionType=high"}],"consumption":{"collectionCount":650,"shareCount":1144,"replyCount":22},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":658,"name":"360°全景","actionUrl":"eyepetizer://tag/658/?title=360%C2%B0%E5%85%A8%E6%99%AF","adTrack":null},{"id":370,"name":"欧洲","actionUrl":"eyepetizer://tag/370/?title=%E6%AC%A7%E6%B4%B2","adTrack":null},{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null}],"type":"PANORAMIC","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":{"text":"360°全景","card":"360°全景","detail":"360°全景"},"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10194,"title":"喂养猫的好奇心","description":"尤金奥尼尔在剧本中写过：curiosity killed a cat（好奇心害死猫），每只猫星人都是好奇宝宝与作死小能手，伟嘉妙鲜包却要告诉人们，猫咪的好奇心不是一件坏事，说不定能帮它找到藏在厨房的小鱼干呢。From whiskas","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/1d5cd526be9a751617efdf5e51bb6a2d.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/1d5cd526be9a751617efdf5e51bb6a2d.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/bf2310314f491e832741a0e976a97321.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10194&editionType=default","duration":40,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10194","forWeibo":"http://wandou.im/359s1t"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10194&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10194&editionType=high"}],"consumption":{"collectionCount":235,"shareCount":484,"replyCount":15},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":538,"name":"喵星人","actionUrl":"eyepetizer://tag/538/?title=%E5%96%B5%E6%98%9F%E4%BA%BA","adTrack":null},{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null},{"id":498,"name":"萌","actionUrl":"eyepetizer://tag/498/?title=%E8%90%8C","adTrack":null},{"id":32,"name":"萌宠","actionUrl":"eyepetizer://tag/32/?title=%E8%90%8C%E5%AE%A0","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10883,"title":"高山滑雪玩腻了，我们高空滑云","description":"在高山滑雪已经无法满足爱好极限的作死青年们，它们想出了全新的玩法：高空滑云。带着雪板从 4500 米高空跃下拥抱卓越雪山，向速度致敬！（BGM：Should I Stay or Go \u2014 The Needy）From Adrenaline Channel","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"运动","author":null,"cover":{"feed":"http://img.kaiyanapp.com/98637a768af28989e6722b3788a8175c.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/98637a768af28989e6722b3788a8175c.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/c29f8f6bdca983bca56126feef909af4.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10883&editionType=default","duration":212,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10883","forWeibo":"http://wandou.im/3azouo"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10883&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10883&editionType=high"}],"consumption":{"collectionCount":230,"shareCount":393,"replyCount":14},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":4,"name":"运动","actionUrl":"eyepetizer://tag/4/?title=%E8%BF%90%E5%8A%A8","adTrack":null},{"id":514,"name":"城会玩","actionUrl":"eyepetizer://tag/514/?title=%E5%9F%8E%E4%BC%9A%E7%8E%A9","adTrack":null},{"id":280,"name":"滑雪","actionUrl":"eyepetizer://tag/280/?title=%E6%BB%91%E9%9B%AA","adTrack":null},{"id":304,"name":"高空","actionUrl":"eyepetizer://tag/304/?title=%E9%AB%98%E7%A9%BA","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11263,"title":"史上超超超快大片已上线","description":"这是一条超超超快的大片儿，魔性得根本停不下来！怎么这么快，怎么这么快，就是这么快，就是这么快，伸出你的手跟上我的节奏，呦呦~","provider":{"name":"投稿","alias":"PGC2","icon":""},"category":"开胃","author":null,"cover":{"feed":"http://img.kaiyanapp.com/1f27faaaa5514aea9d28de970e7efe1a.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/1f27faaaa5514aea9d28de970e7efe1a.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/e759b55df057f1a904d6c38f3424472c.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11263&editionType=default","duration":102,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11263","forWeibo":"http://wandou.im/3epncs"},"releaseTime":1480350902000,"playInfo":[{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11263&editionType=high"}],"consumption":{"collectionCount":202,"shareCount":424,"replyCount":34},"campaign":null,"waterMarks":null,"adTrack":[{"organization":"miaozhen","viewUrl":"","clickUrl":"http://e.cn.miaozhen.com/r/k=2034497&p=74Atg&dx=__IPDX__&rt=2&ns=__IP__&ni=__IESID__&v=__LOC__&xa=__ADPLATFORM__&o="}],"tags":[],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":{"text":"广告"},"label":{"text":"广告","card":"广告","detail":"广告"},"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10506,"title":"日夜轮转，山上的星空","description":"这支延时摄影短片来自挪威著名摄影师 Terje Sorgjerd，拍摄地点位于西班牙的最高峰\u2014\u2014 El Teide 泰德峰。为了捕捉到完美画面，他在这 7 天中只睡了 10 小时，一切美好都来之不易。From TSO Photography","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"旅行","author":null,"cover":{"feed":"http://img.kaiyanapp.com/00ed86faa91106a4974e59b292ee1b7e.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/00ed86faa91106a4974e59b292ee1b7e.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/de5b0373a6b0960846a4d9dffa151f2e.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10506&editionType=default","duration":188,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10506","forWeibo":"http://wandou.im/37k7jg"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10506&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10506&editionType=high"}],"consumption":{"collectionCount":475,"shareCount":670,"replyCount":11},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":9344,"title":"为何人类不无性繁殖","description":"自然界中存在一种可以无性繁殖的雌性鞭尾蜥蜴，孕育的后代与亲代基因完全一致。这种繁殖方式效率很高，但为什么人类不通过这种方式繁殖呢？「棘轮理论」和「红皇后假说」为你解释。From @阿尔法小分队科教组","provider":{"name":"哔哩哔哩动画","alias":"bilibili","icon":"http://img.kaiyanapp.com/b968890a2b3e9ab5ae234175681f8cd4.png"},"category":"科普","author":null,"cover":{"feed":"http://img.kaiyanapp.com/49848234c4c1a5325379c844218881b4.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/49848234c4c1a5325379c844218881b4.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/ff14b593318632945027f96d246da82d.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9344&editionType=default","duration":228,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=9344","forWeibo":"http://wandou.im/2yjq79"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9344&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9344&editionType=high"}],"consumption":{"collectionCount":161,"shareCount":83,"replyCount":12},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":44,"name":"科普","actionUrl":"eyepetizer://tag/44/?title=%E7%A7%91%E6%99%AE","adTrack":null},{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null},{"id":532,"name":"生命","actionUrl":"eyepetizer://tag/532/?title=%E7%94%9F%E5%91%BD","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11147,"title":"良心 3D 动画 ：酒精怪物","description":"一位隐居垂钓的作家在几乎冰封的湖面上垂钓时，被来自威士忌瓶底的奇异生物打断。这是三位导演在悉尼科技大学学习的最后一年制作的学生作品，揭示「酒精可以让人变得不可理喻」的现实。From The The CGBros","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"动画","author":null,"cover":{"feed":"http://img.kaiyanapp.com/15435f8b3310734535402e57b5e946b3.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15435f8b3310734535402e57b5e946b3.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/d08c884abb0106b1561979c45abe5336.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11147&editionType=default","duration":405,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11147","forWeibo":"http://wandou.im/3dszcz"},"releaseTime":1480381200000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11147&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11147&editionType=high"}],"consumption":{"collectionCount":408,"shareCount":204,"replyCount":11},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null},{"id":56,"name":"3D","actionUrl":"eyepetizer://tag/56/?title=3D","adTrack":null},{"id":124,"name":"魔幻","actionUrl":"eyepetizer://tag/124/?title=%E9%AD%94%E5%B9%BB","adTrack":null},{"id":530,"name":"人生","actionUrl":"eyepetizer://tag/530/?title=%E4%BA%BA%E7%94%9F","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11232,"title":"自制高逼格木质手账","description":"实木活页手账！工匠精神就是明明可以靠颜值，却偏要有内涵。金属质感的背脊，感受时间的冷酷；胡桃漆木的外表，触摸岁月的沉淀。工匠实验室为你量身打造的实木手账，你离精致的生活，就差这一本。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"生活","author":{"id":275,"icon":"http://img.kaiyanapp.com/98f0a2b062b97645dd0ab651b63fdd4a.png","name":"罐头视频","description":"专注于生活品质提升的移动视频品牌，以生活类技能为切入点，现有罐头小厨、夹脑计划、星期五来啦、举起爪儿来、工匠实验室、你敢答应吗六个固定栏目。","link":"","latestReleaseTime":1480392376000,"videoNum":13,"adTrack":null,"follow":{"itemType":"author","itemId":275,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/12aa53255e5e9575c1b8e1ed58c7e8f9.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/12aa53255e5e9575c1b8e1ed58c7e8f9.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/777ace11d226444afb5c5127306aba74.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11232&editionType=default","duration":115,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11232","forWeibo":"http://wandou.im/3enb5e"},"releaseTime":1480305334000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11232&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11232&editionType=high"}],"consumption":{"collectionCount":186,"shareCount":67,"replyCount":17},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":666,"name":"生活","actionUrl":"eyepetizer://tag/666/?title=%E7%94%9F%E6%B4%BB","adTrack":null},{"id":178,"name":"手工","actionUrl":"eyepetizer://tag/178/?title=%E6%89%8B%E5%B7%A5","adTrack":null},{"id":46,"name":"教程","actionUrl":"eyepetizer://tag/46/?title=%E6%95%99%E7%A8%8B","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480381200000,"promotion":null,"label":null,"collected":false,"played":false}}],"count":8},{"releaseTime":1480338000000,"type":"evening","date":1480338000000,"publishTime":1480338000000,"itemList":[{"type":"textHeader","data":{"dataType":"TextHeader","text":"- Nov. 28, Supper -","font":"lobster","adTrack":null}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11220,"title":"广告会玩 | 我的保龄球会刹车","description":"大众汽车最新黑科技广告也是用心良苦。顾客们在进行保龄球运动时惊奇的发现，球在撞击球瓶前竟然「急刹车」了。这项「防撞击」的黑科技将被运用到新款汽车中，在紧急交通事故中拯救生命。From 廣告裁判","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/7f87b0bddc13d1224a9e1f53d7efa752.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/7f87b0bddc13d1224a9e1f53d7efa752.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/77f2978352131f3bbd920dd3982c32fe.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11220&editionType=default","duration":113,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11220","forWeibo":"http://www.eyepetizer.net/detail.html?vid=11220"},"releaseTime":1480338001000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11220&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11220&editionType=high"}],"consumption":{"collectionCount":255,"shareCount":300,"replyCount":15},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null},{"id":556,"name":"科技","actionUrl":"eyepetizer://tag/556/?title=%E7%A7%91%E6%8A%80","adTrack":null},{"id":516,"name":"恶搞","actionUrl":"eyepetizer://tag/516/?title=%E6%81%B6%E6%90%9E","adTrack":null},{"id":562,"name":"汽车","actionUrl":"eyepetizer://tag/562/?title=%E6%B1%BD%E8%BD%A6","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480338000000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11240,"title":"叹为观止！天才发明家的奇妙乐器","description":"还记得那个制作弹珠钢琴的天才技术宅吗？这次 Wintergatan 发明演奏了履带式八音盒和机械小提琴，他在音乐、机械和电子方面的知识真是令人叹为观止。悠扬的旋律让心灵感到平谐之美。From Wintergatan","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"音乐","author":null,"cover":{"feed":"http://img.kaiyanapp.com/687a8cda1e41e3da5023bbba5cbc74a2.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/687a8cda1e41e3da5023bbba5cbc74a2.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/b9c5ef84fd2c2709804e0537348d0cd7.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11240&editionType=default","duration":391,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11240","forWeibo":"http://wandou.im/3eo540"},"releaseTime":1480338002000,"playInfo":[{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11240&editionType=high"}],"consumption":{"collectionCount":496,"shareCount":957,"replyCount":34},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":18,"name":"音乐","actionUrl":"eyepetizer://tag/18/?title=%E9%9F%B3%E4%B9%90","adTrack":null},{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":216,"name":"电子","actionUrl":"eyepetizer://tag/216/?title=%E7%94%B5%E5%AD%90","adTrack":null},{"id":208,"name":"器乐","actionUrl":"eyepetizer://tag/208/?title=%E5%99%A8%E4%B9%90","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480338000000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10526,"title":"你真的心甘情愿吗？","description":"Casual Rape 意外性关系，在开放的现代社会这件事经常发生，虽然并不像强奸犯罪一样骇人，但你也很难去给它的后果下一个准确的定义。一夜情过后，各怀心思的男女该如何面对这段全新的关系？From BuzzFeedYellow","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"剧情","author":{"id":156,"icon":"http://img.kaiyanapp.com/26b9092df793460aa04bec2938e4eab0.jpeg","name":"BuzzFeed","description":"每日更新的日常趣事短视频，无论是好笑还是严肃的，你都会有共鸣。","link":"","latestReleaseTime":1480338003000,"videoNum":45,"adTrack":null,"follow":{"itemType":"author","itemId":156,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/2a53f7c49fe14d56ca076a9954539639.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/2a53f7c49fe14d56ca076a9954539639.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/bc242d3eca2267c8ae02afe99185d3f5.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10526&editionType=default","duration":350,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10526","forWeibo":"http://wandou.im/37peq8"},"releaseTime":1480338003000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10526&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10526&editionType=high"}],"consumption":{"collectionCount":274,"shareCount":242,"replyCount":19},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":12,"name":"剧情","actionUrl":"eyepetizer://tag/12/?title=%E5%89%A7%E6%83%85","adTrack":null},{"id":108,"name":"爱情","actionUrl":"eyepetizer://tag/108/?title=%E7%88%B1%E6%83%85","adTrack":null},{"id":518,"name":"诡异","actionUrl":"eyepetizer://tag/518/?title=%E8%AF%A1%E5%BC%82","adTrack":null},{"id":186,"name":"犯罪","actionUrl":"eyepetizer://tag/186/?title=%E7%8A%AF%E7%BD%AA","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480338000000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11160,"title":"打开双手，世界就在手中","description":"手，是我们再熟悉不过的一部分，我们用手触摸、抓握、拍打\u2026\u2026手是力量的起源，是创造万物的生灵之源。当你紧握双手，里面什么也没有；当你打开双手，缤纷多彩的世界从手中应运而生。From Gioacchino Petronicce","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"创意","author":null,"cover":{"feed":"http://img.kaiyanapp.com/4fb96ae0faf22be31c8bcbbdf1d045c7.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/4fb96ae0faf22be31c8bcbbdf1d045c7.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/31c276eb00c9e96d23e12b5d64548f20.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11160&editionType=default","duration":251,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11160","forWeibo":"http://wandou.im/3dxgv5"},"releaseTime":1480338005000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11160&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11160&editionType=high"}],"consumption":{"collectionCount":315,"shareCount":236,"replyCount":14},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":666,"name":"生活","actionUrl":"eyepetizer://tag/666/?title=%E7%94%9F%E6%B4%BB","adTrack":null},{"id":594,"name":"神剪辑","actionUrl":"eyepetizer://tag/594/?title=%E7%A5%9E%E5%89%AA%E8%BE%91","adTrack":null},{"id":36,"name":"集锦","actionUrl":"eyepetizer://tag/36/?title=%E9%9B%86%E9%94%A6","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480338000000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10675,"title":"王者之剑：「最终幻想 15」战斗场景","description":"这是「最终幻想 15：王者之剑」开场 12 分钟片段，战斗场面宏大视效震撼。短片由史克威尔艾尼克斯公司制作，野末武志导演，长谷川隆担任编剧。From Digic Pictures","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"游戏","author":null,"cover":{"feed":"http://img.kaiyanapp.com/796eeb078022495f7a9805a37095cabe.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/796eeb078022495f7a9805a37095cabe.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/39486b89bc069785a8984eaf338810d4.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10675&editionType=default","duration":529,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10675","forWeibo":"http://wandou.im/38ykel"},"releaseTime":1480338005000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10675&editionType=normal"},{"height":572,"width":1366,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10675&editionType=high"}],"consumption":{"collectionCount":265,"shareCount":280,"replyCount":15},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":30,"name":"游戏","actionUrl":"eyepetizer://tag/30/?title=%E6%B8%B8%E6%88%8F","adTrack":null},{"id":74,"name":"CG","actionUrl":"eyepetizer://tag/74/?title=CG","adTrack":null},{"id":14,"name":"动画","actionUrl":"eyepetizer://tag/14/?title=%E5%8A%A8%E7%94%BB","adTrack":null},{"id":204,"name":"精致","actionUrl":"eyepetizer://tag/204/?title=%E7%B2%BE%E8%87%B4","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480338000000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10132,"title":"在这样的日子里，我们必须冲浪","description":"在湖上冲浪听起来不可能，对吧？可爱的「野人」 Larry Cavero 偏偏就在加拿大多伦多快要结冰的湖水上上玩起了冲浪。谁说冲浪只属于夏天和大海？划船不靠浆，一生全靠浪！From Jake Kovnat","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"运动","author":null,"cover":{"feed":"http://img.kaiyanapp.com/8856007a4894e179dba18ec5c0ef81fc.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/8856007a4894e179dba18ec5c0ef81fc.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/ef9ad503ad803ea95dc83cc5694ffc3d.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10132&editionType=default","duration":505,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10132","forWeibo":"http://wandou.im/351yoc"},"releaseTime":1480338005000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10132&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10132&editionType=high"}],"consumption":{"collectionCount":96,"shareCount":71,"replyCount":3},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":4,"name":"运动","actionUrl":"eyepetizer://tag/4/?title=%E8%BF%90%E5%8A%A8","adTrack":null},{"id":284,"name":"冲浪","actionUrl":"eyepetizer://tag/284/?title=%E5%86%B2%E6%B5%AA","adTrack":null},{"id":76,"name":"黑白","actionUrl":"eyepetizer://tag/76/?title=%E9%BB%91%E7%99%BD","adTrack":null},{"id":24,"name":"记录","actionUrl":"eyepetizer://tag/24/?title=%E8%AE%B0%E5%BD%95","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480338000000,"promotion":null,"label":null,"collected":false,"played":false}}],"count":7}]
-     * nextPageUrl : http://baobab.kaiyanapp.com/api/v2/feed?date=1480294800000&num=2
-     * nextPublishTime : 1480424400000
+     * issueList : [{"releaseTime":1480467600000,"type":"morning","date":1480467600000,"publishTime":1480467600000,"itemList":[{"type":"video","data":{"dataType":"VideoBeanForClient","id":11246,"title":"你经历过绝望吗？","description":"为了给女演员示范如何扇耳光，男演员受尽了各种人的各种耳光。最后的解决方法嘛，还是借了立顿茶带来的小灵感。广告由「金刚狼」休·杰克曼出演，变身小火龙之前，快喝口茶清凉一下。From 廣告裁判","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/3094d0a612b889d6d928c568a252a8a0.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/3094d0a612b889d6d928c568a252a8a0.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/ce0e8a96ca74fdfb7854e47c201af1e5.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11246&editionType=default","duration":87,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11246","forWeibo":"http://wandou.im/3eo6bh"},"releaseTime":1480467600000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11246&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11246&editionType=high"}],"consumption":{"collectionCount":535,"shareCount":1241,"replyCount":40},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null},{"id":140,"name":"搞笑","actionUrl":"eyepetizer://tag/140/?title=%E6%90%9E%E7%AC%91","adTrack":null},{"id":570,"name":"电影相关","actionUrl":"eyepetizer://tag/570/?title=%E7%94%B5%E5%BD%B1%E7%9B%B8%E5%85%B3","adTrack":null},{"id":170,"name":"幽默","actionUrl":"eyepetizer://tag/170/?title=%E5%B9%BD%E9%BB%98","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11242,"title":"最萌店员：狗狗咖啡馆","description":"这家开在洛杉矶韩国城的咖啡店很特别，它的「店员」是一群可爱的狗狗们。近几年来「宠物咖啡馆」的概念越来越流行，忙碌的都市人群可以在这里和可爱的小动物们亲密接触，从而获得身心的放松解压。","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"萌宠","author":{"id":156,"icon":"http://img.kaiyanapp.com/26b9092df793460aa04bec2938e4eab0.jpeg","name":"BuzzFeed","description":"每日更新的日常趣事短视频，无论是好笑还是严肃的，你都会有共鸣。","link":"","latestReleaseTime":1480467600000,"videoNum":46,"adTrack":null,"follow":{"itemType":"author","itemId":156,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/15d5db51e62a3f7aead98c81d9bfd046.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/15d5db51e62a3f7aead98c81d9bfd046.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/64ee204953ab224076f2aafde6140456.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11242&editionType=default","duration":196,"webUrl":{"raw":"http://www.eyepetizer.net/panorama_detail.html?vid=11242","forWeibo":"http://wandou.im/3eo5sm"},"releaseTime":1480467600000,"playInfo":[{"height":720,"width":1440,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11242&editionType=normal"},{"height":720,"width":2560,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11242&editionType=high"}],"consumption":{"collectionCount":93,"shareCount":241,"replyCount":15},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":32,"name":"萌宠","actionUrl":"eyepetizer://tag/32/?title=%E8%90%8C%E5%AE%A0","adTrack":null},{"id":498,"name":"萌","actionUrl":"eyepetizer://tag/498/?title=%E8%90%8C","adTrack":null},{"id":658,"name":"360°全景","actionUrl":"eyepetizer://tag/658/?title=360%C2%B0%E5%85%A8%E6%99%AF","adTrack":null},{"id":592,"name":"VR","actionUrl":"eyepetizer://tag/592/?title=VR","adTrack":null}],"type":"PANORAMIC","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":{"text":"360°全景","card":"360°全景","detail":"360°全景"},"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10777,"title":"为不平凡的生活充满热血：「奋力出击」","description":"这是豪车品牌玛莎拉蒂一支名为「奋力出击 Strike」的 90 秒励志短片，邀请到了女童星 Quvenzhane Wallis 饰演一个有着强大心灵，怀着不可动摇的信念努力付出的小女孩。生活因内心而不凡。From Maserati","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/c9a6364a8887e3fa06d570ab0f0ade07.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/c9a6364a8887e3fa06d570ab0f0ade07.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/e450ce461c711e114f6e6cd44a7be738.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10777&editionType=default","duration":90,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10777","forWeibo":"http://wandou.im/39r5fn"},"releaseTime":1480467601000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10777&editionType=normal"},{"height":720,"width":1920,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10777&editionType=high"}],"consumption":{"collectionCount":341,"shareCount":347,"replyCount":6},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null},{"id":510,"name":"励志","actionUrl":"eyepetizer://tag/510/?title=%E5%8A%B1%E5%BF%97","adTrack":null},{"id":482,"name":"感悟","actionUrl":"eyepetizer://tag/482/?title=%E6%84%9F%E6%82%9F","adTrack":null},{"id":562,"name":"汽车","actionUrl":"eyepetizer://tag/562/?title=%E6%B1%BD%E8%BD%A6","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11253,"title":"微型 BLT 三明治","description":"BLT 三明治（B= 培根，L= 生菜，T= 西红柿）因其简单而美味的搭配，被英国人视为经典英式早餐的必备之选。觉得太简单？哈哈，那就让我们拿起小镊子挑战自我，来制作一次超微型的 BLT 三明治吧！From Tastemade","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"创意","author":null,"cover":{"feed":"http://img.kaiyanapp.com/a7117a87285f720fff5a212ddec3ae6e.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/a7117a87285f720fff5a212ddec3ae6e.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/adb07461d69c1cef08260c39629eb66d.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11253&editionType=default","duration":156,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11253","forWeibo":"http://wandou.im/3eo95g"},"releaseTime":1480467601000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11253&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11253&editionType=high"}],"consumption":{"collectionCount":105,"shareCount":169,"replyCount":15},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":2,"name":"创意","actionUrl":"eyepetizer://tag/2/?title=%E5%88%9B%E6%84%8F","adTrack":null},{"id":20,"name":"开胃","actionUrl":"eyepetizer://tag/20/?title=%E5%BC%80%E8%83%83","adTrack":null},{"id":498,"name":"萌","actionUrl":"eyepetizer://tag/498/?title=%E8%90%8C","adTrack":null},{"id":178,"name":"手工","actionUrl":"eyepetizer://tag/178/?title=%E6%89%8B%E5%B7%A5","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10781,"title":"日本最年轻的糖果手艺人","description":"东京浅草有一家叫做「 Amezaiku Ameshin」的糖果店，店里陈设着古法手作棒棒糖都出自糖艺师手塚新理之手，他将传统技艺融入作品里，以期激励下一代糖人工匠。糖果会消失，但匠心永存。From Great Big Story","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"记录","author":null,"cover":{"feed":"http://img.kaiyanapp.com/0a649055e1d2035fb901a6f66602f523.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/0a649055e1d2035fb901a6f66602f523.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/29292decf81e13ebb3acf840da784dca.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10781&editionType=default","duration":156,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10781","forWeibo":"http://wandou.im/39rb49"},"releaseTime":null,"playInfo":[{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10781&editionType=high"}],"consumption":{"collectionCount":307,"shareCount":288,"replyCount":10},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":350,"name":"日本","actionUrl":"eyepetizer://tag/350/?title=%E6%97%A5%E6%9C%AC","adTrack":null},{"id":204,"name":"精致","actionUrl":"eyepetizer://tag/204/?title=%E7%B2%BE%E8%87%B4","adTrack":null},{"id":148,"name":"匠心","actionUrl":"eyepetizer://tag/148/?title=%E5%8C%A0%E5%BF%83","adTrack":null},{"id":20,"name":"开胃","actionUrl":"eyepetizer://tag/20/?title=%E5%BC%80%E8%83%83","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11264,"title":"电影推荐丨「猛于炮火」双料影后飙演技","description":"影片由「小卷」杰西·艾森伯格和「戛纳和威尼斯双料影后」伊莎贝尔·于佩尔共同主演，讲述因车祸丧生的战地摄影女记者的秘密往事。有凭借「她」冲击今年奥斯卡的「女王」于佩尔镇场，怎能错过。From 觸電網","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"预告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/b24f3e7ccab37592222a0b88f69d52e5.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/b24f3e7ccab37592222a0b88f69d52e5.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/232d987b99972d0af542bf1c8b127689.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11264&editionType=default","duration":146,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11264","forWeibo":"http://wandou.im/3erj2c"},"releaseTime":1480467601000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11264&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11264&editionType=high"}],"consumption":{"collectionCount":160,"shareCount":109,"replyCount":5},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":22,"name":"预告","actionUrl":"eyepetizer://tag/22/?title=%E9%A2%84%E5%91%8A","adTrack":null},{"id":130,"name":"悬疑","actionUrl":"eyepetizer://tag/130/?title=%E6%82%AC%E7%96%91","adTrack":null},{"id":110,"name":"亲情","actionUrl":"eyepetizer://tag/110/?title=%E4%BA%B2%E6%83%85","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10562,"title":"白族生皮是怎么制成的","description":"白族生皮是大理一带的白族人民传统的待客名菜。 把猪身上最好的腿肉切成丝，把新鲜烤制的皮子切成片，一份生皮就制作好了。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"旅行","author":{"id":268,"icon":"http://img.kaiyanapp.com/9dbb4923bef2cda5b60733331e428693.jpeg?imageMogr2/quality/60","name":"旅食家","description":"踏遍绿水青山，尝尽世间风味","link":"","latestReleaseTime":1480049304000,"videoNum":7,"adTrack":null,"follow":{"itemType":"author","itemId":268,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/a16b59963f256f79a231808977ed0ff7.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/a16b59963f256f79a231808977ed0ff7.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/e534079344a1ab218098ca6a0cecb4ee.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10562&editionType=default","duration":245,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10562","forWeibo":"http://wandou.im/37x5xi"},"releaseTime":1477464819000,"playInfo":[{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10562&editionType=high"}],"consumption":{"collectionCount":135,"shareCount":135,"replyCount":13},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null},{"id":20,"name":"开胃","actionUrl":"eyepetizer://tag/20/?title=%E5%BC%80%E8%83%83","adTrack":null},{"id":24,"name":"记录","actionUrl":"eyepetizer://tag/24/?title=%E8%AE%B0%E5%BD%95","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480467600000,"promotion":null,"label":null,"collected":false,"played":false}}],"count":7},{"releaseTime":1480424400000,"type":"evening","date":1480424400000,"publishTime":1480424400000,"itemList":[{"type":"textHeader","data":{"dataType":"TextHeader","text":"- Nov. 29, Supper -","font":"lobster","adTrack":null}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11164,"title":"马丁·斯科塞斯新作「沉默」","description":"电影改编自远藤周作的同名小说，由马丁·斯科塞斯执导，连姆·尼森主演。故事讲述德川幕府时代，传教士在禁教令下东渡日本传教，同时调查连恩师弃教一事，期间经历种种磨难，并逐渐了解真相。From moviemaniacsDE","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"预告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/81af27526ffd5b186aa2817bdb6a154b.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/81af27526ffd5b186aa2817bdb6a154b.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/8e8b3653a8334e643c54df34206ad3f7.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11164&editionType=default","duration":133,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11164","forWeibo":"http://wandou.im/3dxjpr"},"releaseTime":1480424400000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11164&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11164&editionType=high"}],"consumption":{"collectionCount":305,"shareCount":429,"replyCount":18},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":22,"name":"预告","actionUrl":"eyepetizer://tag/22/?title=%E9%A2%84%E5%91%8A","adTrack":null},{"id":580,"name":"人性","actionUrl":"eyepetizer://tag/580/?title=%E4%BA%BA%E6%80%A7","adTrack":null},{"id":572,"name":"历史","actionUrl":"eyepetizer://tag/572/?title=%E5%8E%86%E5%8F%B2","adTrack":null},{"id":118,"name":"虐心","actionUrl":"eyepetizer://tag/118/?title=%E8%99%90%E5%BF%83","adTrack":null},{"id":126,"name":"重口","actionUrl":"eyepetizer://tag/126/?title=%E9%87%8D%E5%8F%A3","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480424400000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11255,"title":"告别革命时代最后的理想主义者","description":"古巴革命总指挥、前领导人菲德尔·卡斯特罗于 11 月 25 日逝世。他作为革命时代的理想主义者，为后世留下了深远的影响。片中出现了列宁，马克思，格瓦拉、圣雄甘地\u2026\u2026为资本主义达契亚汽车做起了广告。From Yassin","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"广告","author":null,"cover":{"feed":"http://img.kaiyanapp.com/dda6b863d13c469e537a9fe26cad526a.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/dda6b863d13c469e537a9fe26cad526a.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/1341d93acef631ee58682a4f4059c9a6.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11255&editionType=default","duration":122,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11255","forWeibo":"http://wandou.im/3eob1w"},"releaseTime":1480424401000,"playInfo":[{"height":360,"width":480,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11255&editionType=normal"}],"consumption":{"collectionCount":201,"shareCount":399,"replyCount":21},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":16,"name":"广告","actionUrl":"eyepetizer://tag/16/?title=%E5%B9%BF%E5%91%8A","adTrack":null},{"id":606,"name":"cosplay","actionUrl":"eyepetizer://tag/606/?title=cosplay","adTrack":null},{"id":146,"name":"666","actionUrl":"eyepetizer://tag/146/?title=666","adTrack":null},{"id":572,"name":"历史","actionUrl":"eyepetizer://tag/572/?title=%E5%8E%86%E5%8F%B2","adTrack":null},{"id":562,"name":"汽车","actionUrl":"eyepetizer://tag/562/?title=%E6%B1%BD%E8%BD%A6","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480424400000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":11274,"title":"不上火的椰子鸡暖锅","description":"相信在广东啊海南的童鞋们，对椰子鸡一点也不陌生。这期我就来教大家做不上火还养生的椰子鸡暖锅！清甜的椰汁煮着嫩嫩的鸡肉，蘸着调料真的好吃哭了~椰子鸡温补，冬天吃补血益气,滋润去燥火。","provider":{"name":"PGC","alias":"PGC","icon":""},"category":"开胃","author":{"id":24,"icon":"http://img.kaiyanapp.com/d0c1c7d9eb9a94c598dba3e53d73879c.jpeg","name":"厨娘物语","description":"有爱的生活美学，廚娘物语。新媒体美食生活节目。","link":"http://weibo.com/u/5232055343?topnav=1&wvr=6&topsug=1&is_all=1","latestReleaseTime":1480395982000,"videoNum":33,"adTrack":null,"follow":{"itemType":"author","itemId":24,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/f170ecac4b6568b7520fa95a7975ce14.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/f170ecac4b6568b7520fa95a7975ce14.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/6260d2a138425ba56dda4ded32f4a55e.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11274&editionType=default","duration":203,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=11274","forWeibo":"http://wandou.im/3eu6d4"},"releaseTime":1480395982000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11274&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=11274&editionType=high"}],"consumption":{"collectionCount":502,"shareCount":651,"replyCount":16},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":20,"name":"开胃","actionUrl":"eyepetizer://tag/20/?title=%E5%BC%80%E8%83%83","adTrack":null},{"id":272,"name":"荤食","actionUrl":"eyepetizer://tag/272/?title=%E8%8D%A4%E9%A3%9F","adTrack":null},{"id":242,"name":"中华美食","actionUrl":"eyepetizer://tag/242/?title=%E4%B8%AD%E5%8D%8E%E7%BE%8E%E9%A3%9F","adTrack":null},{"id":262,"name":"肉","actionUrl":"eyepetizer://tag/262/?title=%E8%82%89","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480424400000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":10778,"title":"狗狗的雪山「飓风大营救」","description":"短片来自世界尽头的美国小镇特柳赖德，这里的雪场雇佣了 5 只可爱又尽职的雪崩搜救犬，当地的摄影师 Brett Schrechengost 记录了这个关于「毛绒绒的救援英雄」的故事。From Telluride Ski Resort","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"记录","author":{"id":134,"icon":"http://img.kaiyanapp.com/fef7cdcd26a44f0a30902838320d6b52.jpeg","name":"GoPro","description":"用第一人称视角记录刺激的运动和温暖的生活。","link":"","latestReleaseTime":1480424401000,"videoNum":62,"adTrack":null,"follow":{"itemType":"author","itemId":134,"followed":false}},"cover":{"feed":"http://img.kaiyanapp.com/cfa199c709afe29a7bd30efe6ca68a23.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/cfa199c709afe29a7bd30efe6ca68a23.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/07d173e3e883d283531eb3188a336132.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10778&editionType=default","duration":207,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=10778","forWeibo":"http://wandou.im/39r5vn"},"releaseTime":1480424401000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10778&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=10778&editionType=high"}],"consumption":{"collectionCount":144,"shareCount":269,"replyCount":8},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":32,"name":"萌宠","actionUrl":"eyepetizer://tag/32/?title=%E8%90%8C%E5%AE%A0","adTrack":null},{"id":24,"name":"记录","actionUrl":"eyepetizer://tag/24/?title=%E8%AE%B0%E5%BD%95","adTrack":null},{"id":540,"name":"汪星人","actionUrl":"eyepetizer://tag/540/?title=%E6%B1%AA%E6%98%9F%E4%BA%BA","adTrack":null},{"id":174,"name":"治愈","actionUrl":"eyepetizer://tag/174/?title=%E6%B2%BB%E6%84%88","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480424400000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":9758,"title":"杀手女全程开挂「掉包风云」","description":"杀手女主在执行任务受伤撤退时，却意外将自己装有巨款和武器的包同路人拿错。暴露身份深陷危机的女主瞬间开挂，利用路人装满生活用品的手袋智斗劲敌。快节奏剪辑配合热血沸腾的动作，帅！From Red Giant Films","provider":{"name":"YouTube","alias":"youtube","icon":"http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png"},"category":"剧情","author":null,"cover":{"feed":"http://img.kaiyanapp.com/6ab6a6275a1096a55e1e7584b9a9f91b.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/6ab6a6275a1096a55e1e7584b9a9f91b.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/fc3a4ea5b6ad68997b5d637aa091d45a.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9758&editionType=default","duration":534,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=9758","forWeibo":"http://wandou.im/31nka5"},"releaseTime":1480424402000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9758&editionType=normal"},{"height":546,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=9758&editionType=high"}],"consumption":{"collectionCount":432,"shareCount":303,"replyCount":18},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":12,"name":"剧情","actionUrl":"eyepetizer://tag/12/?title=%E5%89%A7%E6%83%85","adTrack":null},{"id":184,"name":"动作","actionUrl":"eyepetizer://tag/184/?title=%E5%8A%A8%E4%BD%9C","adTrack":null},{"id":508,"name":"燃","actionUrl":"eyepetizer://tag/508/?title=%E7%87%83","adTrack":null},{"id":130,"name":"悬疑","actionUrl":"eyepetizer://tag/130/?title=%E6%82%AC%E7%96%91","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480424400000,"promotion":null,"label":null,"collected":false,"played":false}},{"type":"video","data":{"dataType":"VideoBeanForClient","id":8846,"title":"布列塔尼海岸的潮起潮落","description":"Brittany 布列塔尼半岛位于法国西北部，恐怕是整个欧洲大陆最具魔幻色彩的地区。它神秘、传奇，让人一时难辨梦境或是现实。本片作者用时 14 个月，5000 公里路程，只为记录布列塔尼海岸的壮丽。From Tanguy Louvigny","provider":{"name":"Vimeo","alias":"vimeo","icon":"http://img.kaiyanapp.com/c3ad630be461cbb081649c9e21d6cbe3.png"},"category":"旅行","author":null,"cover":{"feed":"http://img.kaiyanapp.com/fe927d6a26673a20cfe27067e0b1c74f.jpeg?imageMogr2/quality/60","detail":"http://img.kaiyanapp.com/fe927d6a26673a20cfe27067e0b1c74f.jpeg?imageMogr2/quality/60","blurred":"http://img.kaiyanapp.com/9a5914c62853a22aadc0e39802f38af7.jpeg?imageMogr2/quality/60","sharing":null},"playUrl":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=8846&editionType=default","duration":189,"webUrl":{"raw":"http://www.eyepetizer.net/detail.html?vid=8846","forWeibo":"http://wandou.im/2sym7m"},"releaseTime":1480424402000,"playInfo":[{"height":480,"width":854,"name":"标清","type":"normal","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=8846&editionType=normal"},{"height":720,"width":1280,"name":"高清","type":"high","url":"http://baobab.kaiyanapp.com/api/v1/playUrl?vid=8846&editionType=high"}],"consumption":{"collectionCount":294,"shareCount":357,"replyCount":13},"campaign":null,"waterMarks":null,"adTrack":null,"tags":[{"id":10,"name":"旅行","actionUrl":"eyepetizer://tag/10/?title=%E6%97%85%E8%A1%8C","adTrack":null},{"id":78,"name":"延时","actionUrl":"eyepetizer://tag/78/?title=%E5%BB%B6%E6%97%B6","adTrack":null},{"id":370,"name":"欧洲","actionUrl":"eyepetizer://tag/370/?title=%E6%AC%A7%E6%B4%B2","adTrack":null},{"id":520,"name":"大自然","actionUrl":"eyepetizer://tag/520/?title=%E5%A4%A7%E8%87%AA%E7%84%B6","adTrack":null}],"type":"NORMAL","idx":0,"shareAdTrack":null,"favoriteAdTrack":null,"webAdTrack":null,"date":1480424400000,"promotion":null,"label":null,"collected":false,"played":false}}],"count":7}]
+     * nextPageUrl : http://baobab.kaiyanapp.com/api/v2/feed?date=1480381200000&num=2
+     * nextPublishTime : 1480510800000
      * newestIssueType : morning
      * dialog : null
      */
@@ -27,6 +27,13 @@ public class DailyInfo {
     private String newestIssueType;
     private Object dialog;
     private List<IssueListBean> issueList;
+
+    protected DailyInfo(Parcel in) {
+        nextPageUrl = in.readString();
+        nextPublishTime = in.readLong();
+        newestIssueType = in.readString();
+    }
+
 
     public String getNextPageUrl() {
         return nextPageUrl;
@@ -68,7 +75,7 @@ public class DailyInfo {
         this.issueList = issueList;
     }
 
-    public static class IssueListBean implements Parcelable {
+    public static class IssueListBean {
 
 
         private long releaseTime;
@@ -77,42 +84,6 @@ public class DailyInfo {
         private long publishTime;
         private int count;
         private List<ItemListBean> itemList;
-
-        protected IssueListBean(Parcel in) {
-            releaseTime = in.readLong();
-            type = in.readString();
-            date = in.readLong();
-            publishTime = in.readLong();
-            count = in.readInt();
-            itemList = in.createTypedArrayList(ItemListBean.CREATOR);
-        }
-
-        @Override
-        public void writeToParcel(Parcel dest, int flags) {
-            dest.writeLong(releaseTime);
-            dest.writeString(type);
-            dest.writeLong(date);
-            dest.writeLong(publishTime);
-            dest.writeInt(count);
-            dest.writeTypedList(itemList);
-        }
-
-        @Override
-        public int describeContents() {
-            return 0;
-        }
-
-        public static final Creator<IssueListBean> CREATOR = new Creator<IssueListBean>() {
-            @Override
-            public IssueListBean createFromParcel(Parcel in) {
-                return new IssueListBean(in);
-            }
-
-            @Override
-            public IssueListBean[] newArray(int size) {
-                return new IssueListBean[size];
-            }
-        };
 
         public long getReleaseTime() {
             return releaseTime;
@@ -162,14 +133,28 @@ public class DailyInfo {
             this.itemList = itemList;
         }
 
-        public static class ItemListBean implements  Parcelable {
+        public static class ItemListBean implements Parcelable{
 
 
             private String type;
             private DataBean data;
 
+
             protected ItemListBean(Parcel in) {
                 type = in.readString();
+                data = in.readParcelable(DataBean.class.getClassLoader());
+            }
+
+
+            @Override
+            public void writeToParcel(Parcel dest, int flags) {
+                dest.writeString(type);
+                dest.writeParcelable(data, flags);
+            }
+
+            @Override
+            public int describeContents() {
+                return 0;
             }
 
             public static final Creator<ItemListBean> CREATOR = new Creator<ItemListBean>() {
@@ -188,6 +173,8 @@ public class DailyInfo {
                 return type;
             }
 
+
+
             public void setType(String type) {
                 this.type = type;
             }
@@ -200,18 +187,9 @@ public class DailyInfo {
                 this.data = data;
             }
 
-            @Override
-            public int describeContents() {
-                return 0;
-            }
 
-            @Override
-            public void writeToParcel(Parcel dest, int flags) {
-                dest.writeString(type);
-            }
 
-            public static class DataBean {
-
+            public static class DataBean implements Parcelable {
 
                 private String dataType;
                 private int id;
@@ -219,7 +197,7 @@ public class DailyInfo {
                 private String description;
                 private ProviderBean provider;
                 private String category;
-                private AuthorBean author;
+                private Object author;
                 private CoverBean cover;
                 private String playUrl;
                 private int duration;
@@ -236,13 +214,42 @@ public class DailyInfo {
                 private Object webAdTrack;
                 private long date;
                 private Object promotion;
-                private LabelBean label;
+                private Object label;
                 private boolean collected;
                 private boolean played;
                 private List<PlayInfoBean> playInfo;
                 private List<TagsBean> tags;
-
                 private String text;
+
+                protected DataBean(Parcel in) {
+                    dataType = in.readString();
+                    id = in.readInt();
+                    title = in.readString();
+                    description = in.readString();
+                    category = in.readString();
+                    cover = in.readParcelable(CoverBean.class.getClassLoader());
+                    playUrl = in.readString();
+                    duration = in.readInt();
+                    releaseTime = in.readLong();
+                    type = in.readString();
+                    idx = in.readInt();
+                    date = in.readLong();
+                    collected = in.readByte() != 0;
+                    played = in.readByte() != 0;
+                    text = in.readString();
+                }
+
+                public static final Creator<DataBean> CREATOR = new Creator<DataBean>() {
+                    @Override
+                    public DataBean createFromParcel(Parcel in) {
+                        return new DataBean(in);
+                    }
+
+                    @Override
+                    public DataBean[] newArray(int size) {
+                        return new DataBean[size];
+                    }
+                };
 
                 public String getText() {
                     return text;
@@ -251,7 +258,6 @@ public class DailyInfo {
                 public void setText(String text) {
                     this.text = text;
                 }
-
                 public String getDataType() {
                     return dataType;
                 }
@@ -300,11 +306,11 @@ public class DailyInfo {
                     this.category = category;
                 }
 
-                public AuthorBean getAuthor() {
+                public Object getAuthor() {
                     return author;
                 }
 
-                public void setAuthor(AuthorBean author) {
+                public void setAuthor(Object author) {
                     this.author = author;
                 }
 
@@ -436,11 +442,11 @@ public class DailyInfo {
                     this.promotion = promotion;
                 }
 
-                public LabelBean getLabel() {
+                public Object getLabel() {
                     return label;
                 }
 
-                public void setLabel(LabelBean label) {
+                public void setLabel(Object label) {
                     this.label = label;
                 }
 
@@ -476,34 +482,40 @@ public class DailyInfo {
                     this.tags = tags;
                 }
 
-                public static class ProviderBean implements  Parcelable {
+                @Override
+                public int describeContents() {
+                    return 0;
+                }
+
+                @Override
+                public void writeToParcel(Parcel dest, int flags) {
+                    dest.writeString(dataType);
+                    dest.writeInt(id);
+                    dest.writeString(title);
+                    dest.writeString(description);
+                    dest.writeString(category);
+                    dest.writeParcelable(cover, flags);
+                    dest.writeString(playUrl);
+                    dest.writeInt(duration);
+                    dest.writeLong(releaseTime);
+                    dest.writeString(type);
+                    dest.writeInt(idx);
+                    dest.writeLong(date);
+                    dest.writeByte((byte) (collected ? 1 : 0));
+                    dest.writeByte((byte) (played ? 1 : 0));
+                    dest.writeString(text);
+                }
+
+                public static class ProviderBean {
                     /**
-                     * name : PGC
-                     * alias : PGC
-                     * icon :
+                     * name : YouTube
+                     * alias : youtube
+                     * icon : http://img.kaiyanapp.com/fa20228bc5b921e837156923a58713f6.png
                      */
 
                     private String name;
                     private String alias;
                     private String icon;
-
-                    protected ProviderBean(Parcel in) {
-                        name = in.readString();
-                        alias = in.readString();
-                        icon = in.readString();
-                    }
-
-                    public static final Creator<ProviderBean> CREATOR = new Creator<ProviderBean>() {
-                        @Override
-                        public ProviderBean createFromParcel(Parcel in) {
-                            return new ProviderBean(in);
-                        }
-
-                        @Override
-                        public ProviderBean[] newArray(int size) {
-                            return new ProviderBean[size];
-                        }
-                    };
 
                     public String getName() {
                         return name;
@@ -528,227 +540,13 @@ public class DailyInfo {
                     public void setIcon(String icon) {
                         this.icon = icon;
                     }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeString(name);
-                        dest.writeString(alias);
-                        dest.writeString(icon);
-                    }
                 }
 
-                public static class AuthorBean implements  Parcelable {
+                public static class CoverBean implements Parcelable {
                     /**
-                     * id : 270
-                     * icon : http://img.kaiyanapp.com/8b2e623be7f5956fd60fc2986bafab74.jpeg?imageMogr2/quality/60
-                     * name : All VR Films
-                     * description : 来自巴黎的360°VR影像制作公司 ∣ www.allvr.fr
-                     * link :
-                     * latestReleaseTime : 1477456388000
-                     * videoNum : 4
-                     * adTrack : null
-                     * follow : {"itemType":"author","itemId":270,"followed":false}
-                     */
-
-                    private int id;
-                    private String icon;
-                    private String name;
-                    private String description;
-                    private String link;
-                    private long latestReleaseTime;
-                    private int videoNum;
-                    private Object adTrack;
-                    private FollowBean follow;
-
-                    protected AuthorBean(Parcel in) {
-                        id = in.readInt();
-                        icon = in.readString();
-                        name = in.readString();
-                        description = in.readString();
-                        link = in.readString();
-                        latestReleaseTime = in.readLong();
-                        videoNum = in.readInt();
-                        follow = in.readParcelable(FollowBean.class.getClassLoader());
-                    }
-
-                    public static final Creator<AuthorBean> CREATOR = new Creator<AuthorBean>() {
-                        @Override
-                        public AuthorBean createFromParcel(Parcel in) {
-                            return new AuthorBean(in);
-                        }
-
-                        @Override
-                        public AuthorBean[] newArray(int size) {
-                            return new AuthorBean[size];
-                        }
-                    };
-
-                    public int getId() {
-                        return id;
-                    }
-
-                    public void setId(int id) {
-                        this.id = id;
-                    }
-
-                    public String getIcon() {
-                        return icon;
-                    }
-
-                    public void setIcon(String icon) {
-                        this.icon = icon;
-                    }
-
-                    public String getName() {
-                        return name;
-                    }
-
-                    public void setName(String name) {
-                        this.name = name;
-                    }
-
-                    public String getDescription() {
-                        return description;
-                    }
-
-                    public void setDescription(String description) {
-                        this.description = description;
-                    }
-
-                    public String getLink() {
-                        return link;
-                    }
-
-                    public void setLink(String link) {
-                        this.link = link;
-                    }
-
-                    public long getLatestReleaseTime() {
-                        return latestReleaseTime;
-                    }
-
-                    public void setLatestReleaseTime(long latestReleaseTime) {
-                        this.latestReleaseTime = latestReleaseTime;
-                    }
-
-                    public int getVideoNum() {
-                        return videoNum;
-                    }
-
-                    public void setVideoNum(int videoNum) {
-                        this.videoNum = videoNum;
-                    }
-
-                    public Object getAdTrack() {
-                        return adTrack;
-                    }
-
-                    public void setAdTrack(Object adTrack) {
-                        this.adTrack = adTrack;
-                    }
-
-                    public FollowBean getFollow() {
-                        return follow;
-                    }
-
-                    public void setFollow(FollowBean follow) {
-                        this.follow = follow;
-                    }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeInt(id);
-                        dest.writeString(icon);
-                        dest.writeString(name);
-                        dest.writeString(description);
-                        dest.writeString(link);
-                        dest.writeLong(latestReleaseTime);
-                        dest.writeInt(videoNum);
-                        dest.writeParcelable(follow, flags);
-                    }
-
-                    public static class FollowBean implements  Parcelable {
-                        /**
-                         * itemType : author
-                         * itemId : 270
-                         * followed : false
-                         */
-
-                        private String itemType;
-                        private int itemId;
-                        private boolean followed;
-
-                        protected FollowBean(Parcel in) {
-                            itemType = in.readString();
-                            itemId = in.readInt();
-                            followed = in.readByte() != 0;
-                        }
-
-                        public static final Creator<FollowBean> CREATOR = new Creator<FollowBean>() {
-                            @Override
-                            public FollowBean createFromParcel(Parcel in) {
-                                return new FollowBean(in);
-                            }
-
-                            @Override
-                            public FollowBean[] newArray(int size) {
-                                return new FollowBean[size];
-                            }
-                        };
-
-                        public String getItemType() {
-                            return itemType;
-                        }
-
-                        public void setItemType(String itemType) {
-                            this.itemType = itemType;
-                        }
-
-                        public int getItemId() {
-                            return itemId;
-                        }
-
-                        public void setItemId(int itemId) {
-                            this.itemId = itemId;
-                        }
-
-                        public boolean isFollowed() {
-                            return followed;
-                        }
-
-                        public void setFollowed(boolean followed) {
-                            this.followed = followed;
-                        }
-
-                        @Override
-                        public int describeContents() {
-                            return 0;
-                        }
-
-                        @Override
-                        public void writeToParcel(Parcel dest, int flags) {
-                            dest.writeString(itemType);
-                            dest.writeInt(itemId);
-                            dest.writeByte((byte) (followed ? 1 : 0));
-                        }
-                    }
-                }
-
-                public static class CoverBean implements  Parcelable {
-                    /**
-                     * feed : http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60
-                     * detail : http://img.kaiyanapp.com/15fdc64c67ea45a1ed39f807c29cf2de.jpeg?imageMogr2/quality/60
-                     * blurred : http://img.kaiyanapp.com/d58edef02cc209574cc40882beceb69f.jpeg?imageMogr2/quality/60
+                     * feed : http://img.kaiyanapp.com/3094d0a612b889d6d928c568a252a8a0.jpeg?imageMogr2/quality/60
+                     * detail : http://img.kaiyanapp.com/3094d0a612b889d6d928c568a252a8a0.jpeg?imageMogr2/quality/60
+                     * blurred : http://img.kaiyanapp.com/ce0e8a96ca74fdfb7854e47c201af1e5.jpeg?imageMogr2/quality/60
                      * sharing : null
                      */
 
@@ -820,31 +618,11 @@ public class DailyInfo {
                     }
                 }
 
-                public static class WebUrlBean implements  Parcelable{
-                    /**
-                     * raw : http://www.eyepetizer.net/detail.html?vid=10516
-                     * forWeibo : http://wandou.im/37oba4
-                     */
+                public static class WebUrlBean {
+
 
                     private String raw;
                     private String forWeibo;
-
-                    protected WebUrlBean(Parcel in) {
-                        raw = in.readString();
-                        forWeibo = in.readString();
-                    }
-
-                    public static final Creator<WebUrlBean> CREATOR = new Creator<WebUrlBean>() {
-                        @Override
-                        public WebUrlBean createFromParcel(Parcel in) {
-                            return new WebUrlBean(in);
-                        }
-
-                        @Override
-                        public WebUrlBean[] newArray(int size) {
-                            return new WebUrlBean[size];
-                        }
-                    };
 
                     public String getRaw() {
                         return raw;
@@ -861,47 +639,14 @@ public class DailyInfo {
                     public void setForWeibo(String forWeibo) {
                         this.forWeibo = forWeibo;
                     }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeString(raw);
-                        dest.writeString(forWeibo);
-                    }
                 }
 
-                public static class ConsumptionBean implements Parcelable {
-                    /**
-                     * collectionCount : 650
-                     * shareCount : 1144
-                     * replyCount : 22
-                     */
+                public static class ConsumptionBean {
+
 
                     private int collectionCount;
                     private int shareCount;
                     private int replyCount;
-
-                    protected ConsumptionBean(Parcel in) {
-                        collectionCount = in.readInt();
-                        shareCount = in.readInt();
-                        replyCount = in.readInt();
-                    }
-
-                    public static final Creator<ConsumptionBean> CREATOR = new Creator<ConsumptionBean>() {
-                        @Override
-                        public ConsumptionBean createFromParcel(Parcel in) {
-                            return new ConsumptionBean(in);
-                        }
-
-                        @Override
-                        public ConsumptionBean[] newArray(int size) {
-                            return new ConsumptionBean[size];
-                        }
-                    };
 
                     public int getCollectionCount() {
                         return collectionCount;
@@ -926,83 +671,9 @@ public class DailyInfo {
                     public void setReplyCount(int replyCount) {
                         this.replyCount = replyCount;
                     }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeInt(collectionCount);
-                        dest.writeInt(shareCount);
-                        dest.writeInt(replyCount);
-                    }
                 }
 
-                public static class LabelBean  implements Parcelable{
-
-
-                    private String text;
-                    private String card;
-                    private String detail;
-
-                    protected LabelBean(Parcel in) {
-                        text = in.readString();
-                        card = in.readString();
-                        detail = in.readString();
-                    }
-
-                    public static final Creator<LabelBean> CREATOR = new Creator<LabelBean>() {
-                        @Override
-                        public LabelBean createFromParcel(Parcel in) {
-                            return new LabelBean(in);
-                        }
-
-                        @Override
-                        public LabelBean[] newArray(int size) {
-                            return new LabelBean[size];
-                        }
-                    };
-
-                    public String getText() {
-                        return text;
-                    }
-
-                    public void setText(String text) {
-                        this.text = text;
-                    }
-
-                    public String getCard() {
-                        return card;
-                    }
-
-                    public void setCard(String card) {
-                        this.card = card;
-                    }
-
-                    public String getDetail() {
-                        return detail;
-                    }
-
-                    public void setDetail(String detail) {
-                        this.detail = detail;
-                    }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeString(text);
-                        dest.writeString(card);
-                        dest.writeString(detail);
-                    }
-                }
-
-                public static class PlayInfoBean implements Parcelable {
+                public static class PlayInfoBean {
 
 
                     private int height;
@@ -1010,26 +681,6 @@ public class DailyInfo {
                     private String name;
                     private String type;
                     private String url;
-
-                    protected PlayInfoBean(Parcel in) {
-                        height = in.readInt();
-                        width = in.readInt();
-                        name = in.readString();
-                        type = in.readString();
-                        url = in.readString();
-                    }
-
-                    public static final Creator<PlayInfoBean> CREATOR = new Creator<PlayInfoBean>() {
-                        @Override
-                        public PlayInfoBean createFromParcel(Parcel in) {
-                            return new PlayInfoBean(in);
-                        }
-
-                        @Override
-                        public PlayInfoBean[] newArray(int size) {
-                            return new PlayInfoBean[size];
-                        }
-                    };
 
                     public int getHeight() {
                         return height;
@@ -1070,46 +721,15 @@ public class DailyInfo {
                     public void setUrl(String url) {
                         this.url = url;
                     }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeInt(height);
-                        dest.writeInt(width);
-                        dest.writeString(name);
-                        dest.writeString(type);
-                        dest.writeString(url);
-                    }
                 }
 
-                public static class TagsBean implements Parcelable {
+                public static class TagsBean {
+
 
                     private int id;
                     private String name;
                     private String actionUrl;
                     private Object adTrack;
-
-                    protected TagsBean(Parcel in) {
-                        id = in.readInt();
-                        name = in.readString();
-                        actionUrl = in.readString();
-                    }
-
-                    public static final Creator<TagsBean> CREATOR = new Creator<TagsBean>() {
-                        @Override
-                        public TagsBean createFromParcel(Parcel in) {
-                            return new TagsBean(in);
-                        }
-
-                        @Override
-                        public TagsBean[] newArray(int size) {
-                            return new TagsBean[size];
-                        }
-                    };
 
                     public int getId() {
                         return id;
@@ -1141,18 +761,6 @@ public class DailyInfo {
 
                     public void setAdTrack(Object adTrack) {
                         this.adTrack = adTrack;
-                    }
-
-                    @Override
-                    public int describeContents() {
-                        return 0;
-                    }
-
-                    @Override
-                    public void writeToParcel(Parcel dest, int flags) {
-                        dest.writeInt(id);
-                        dest.writeString(name);
-                        dest.writeString(actionUrl);
                     }
                 }
             }

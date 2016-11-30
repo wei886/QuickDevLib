@@ -1,11 +1,11 @@
 package Http.retrofit;
 
 import Http.config.CookieManager;
-import Http.config.FastJsonConverterFactory;
 import okhttp3.CookieJar;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
  * Created by Administrator on 2016/11/22.
@@ -21,7 +21,8 @@ public enum RetrofitClient implements ApiConstacts {
         mOkhttpClient = OkFactory.INSTACE.getOkhttpClient();
         retrofit = new Retrofit.Builder().
                 client(mOkhttpClient).
-                addConverterFactory(new FastJsonConverterFactory()).
+//                addConverterFactory(new FastJsonConverterFactory()).
+                addConverterFactory(GsonConverterFactory.create()).
                 addCallAdapterFactory(RxJavaCallAdapterFactory.create()).
                 baseUrl(BASE_URL_EYEPETIZER).build();
     }
@@ -31,7 +32,7 @@ public enum RetrofitClient implements ApiConstacts {
         mOkhttpClient = OkFactory.INSTACE.getOkhttpClient();
         retrofit = new Retrofit.Builder().
                 client(mOkhttpClient).
-                addConverterFactory(new FastJsonConverterFactory()).
+                addConverterFactory(  GsonConverterFactory.create()).
                 baseUrl(baseUrl).build();
     }
 
