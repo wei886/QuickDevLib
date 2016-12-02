@@ -1,5 +1,6 @@
 package com.eyepetizer.ui.activity;
 
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
@@ -32,7 +33,7 @@ public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     }
 
     @Override
-    public void initData() {
+    public void initData(Bundle savedInstanceState) {
         mRgHome.setOnCheckedChangeListener(this);
 
 

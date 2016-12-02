@@ -10,6 +10,6 @@ public class Replies {
 
     public String nextPageUrl;
 
-    public List<ReplyList> replyList;
+    public List<ReplyInfo> replyList;
 
 }

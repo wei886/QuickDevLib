@@ -11,11 +11,19 @@ import com.squareup.picasso.Picasso;
  * description:
  */
 
-public class ImageUtils {
+public enum ImageUtils {
 
 
-   public static void disPLay(Context context , ImageView imageView,String url){
+    INSTANCE;
 
-       Picasso.with(context) .load(url).into(imageView);
-   }
+    public void disPLay(Context context, ImageView imageView, String url) {
+
+        Picasso.with(context).load(url).into(imageView);
+    }
+
+    public void disPLayCircle(Context context, ImageView imageView, String url) {
+        Picasso.with(context).load(url).transform(new CircleTransform()).into(imageView);
+    }
+
+
 }

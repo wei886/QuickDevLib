@@ -81,7 +81,7 @@ public class FeedAdapter extends BaseRVAdapter {
             DailyInfo.IssueListBean.ItemListBean itemListBean = list.get(i);
             if (itemListBean != null) {
                 h.tvContentTitle.setText(itemListBean.getData().getTitle());
-                ImageUtils.disPLay(context, h.img, itemListBean.getData().getCover().getDetail());
+                ImageUtils.INSTANCE.disPLay(context, h.img, itemListBean.getData().getCover().getDetail());
             }
         }
     }

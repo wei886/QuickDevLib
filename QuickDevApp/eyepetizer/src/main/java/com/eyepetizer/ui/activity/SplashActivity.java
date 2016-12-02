@@ -4,6 +4,7 @@ import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -25,12 +26,12 @@ public class SplashActivity extends BaseActivity {
     }
 
     @Override
-    public void initData() {
+    public void initData(Bundle savedInstanceState) {
         animatorSet = new AnimatorSet();
         animatorSet.playTogether(ObjectAnimator.ofFloat(mRlBg, "alpha", 0.6f, 0.8f, 1, 1),
                 ObjectAnimator.ofFloat(mRlBg, "scaleX", 1f, 1.05f, 1.1f, 1.02f, 1f),
                 ObjectAnimator.ofFloat(mRlBg, "scaleY", 1f, 1.05f, 1.1f, 1.02f, 1f));
-        animatorSet.setDuration(3000);
+        animatorSet.setDuration(1000);
         animatorSet.addListener(new Animator.AnimatorListener() {
             @Override
             public void onAnimationStart(Animator animation) {

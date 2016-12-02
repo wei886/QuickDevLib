@@ -8,6 +8,8 @@ import android.view.View;
 
 import java.util.ArrayList;
 
+import ui.utils.StatusBarUtils;
+
 /**
  * Created by Administrator on 2016/11/14.
  */
@@ -28,12 +30,19 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(setLayoutId());
         initView();
-        initData();
+        initData(savedInstanceState);
+        StatusBarUtils.from(this)
+                .setTransparentStatusbar(true)
+                .setTransparentNavigationbar(true)
+//                .setActionbarView(mNavigationBar)
+                .setLightStatusBar(false)
+                .process();
     }
+
 
     public abstract int setLayoutId();
 
-    public abstract void initData();
+    public abstract void initData(Bundle savedInstanceState);
 
     public abstract void initView();
 

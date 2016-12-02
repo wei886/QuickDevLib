@@ -1,6 +1,6 @@
 package com.eyepetizer.ui.model;
 
-public class ReplyList {
+public class ReplyInfo {
 
     public long id;
     public int videoId;

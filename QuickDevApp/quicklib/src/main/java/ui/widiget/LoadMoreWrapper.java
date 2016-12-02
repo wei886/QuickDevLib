@@ -40,7 +40,7 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
-        Log.e(TAG,"position--="+position);
+        Log.e(TAG, "position--=" + position);
         if (getItemViewType(position) == TYPE_LOAD_MORE) {//加载更多footer
             mFootViewHolder = (LoadMoreViewHolder) holder;
             refreshFooter();
@@ -169,7 +169,8 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
 
     public void notifyInnerAdapter() {
         if (mInnerAdapter != null) {
-            mInnerAdapter.notifyItemRangeChanged(0,mInnerAdapter.getItemCount());
+//            mInnerAdapter.notifyItemRangeChanged(0,mInnerAdapter.getItemCount());
+            mInnerAdapter.notifyDataSetChanged();
         }
     }
 
