@@ -112,10 +112,14 @@ public class PlayView extends View {
         canvas.drawRoundRect(rect, 24, 24, mPaintFill);
         canvas.drawRoundRect(rect, 24, 24, mPaintOutLine);
 
+        canvas.restore();
+
+
+
         //画腿
 
-        int Leg_Right = 40;
-        int Leg_Left = 20;
+        int Leg_Right = 148;
+        int Leg_Left = 136;
 
         Path leg = new Path();
         leg.moveTo(rectCenterX, rect.bottom);
@@ -126,7 +130,6 @@ public class PlayView extends View {
         leg.lineTo((float) (rectCenterX - Leg_Left * Math.sin(30)), (float) (rect.bottom + (Leg_Left * Math.cos(30))));
         canvas.drawPath(leg,mPaintOutLine);
 
-        canvas.restore();
 
     }
 
