@@ -15,13 +15,17 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
             android:name=".ui.activity.HomeActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SceneTransitionTheme" />
         <activity
             android:name=".ui.activity.VideoDetailActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/SceneTransitionTheme" />
 
 
-        <activity android:name=".ui.activity.SplashActivity">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="portrait">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +35,9 @@
         </activity>
 
 
-        <activity android:name=".ui.activity.VideoPlayActivity" android:screenOrientation="landscape">
+        <activity
+            android:name=".ui.activity.VideoPlayActivity"
+            android:screenOrientation="landscape">
 
 
         </activity>

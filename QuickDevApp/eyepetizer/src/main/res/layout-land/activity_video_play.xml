@@ -3,8 +3,6 @@
     android:id="@+id/rl_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:clipToPadding="true"
-    android:fitsSystemWindows="true"
     android:orientation="vertical">
 
 
@@ -12,18 +10,12 @@
         android:id="@+id/ijk_video_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:transitionName="@string/trannsition_item_video" />
+          />
 
 
-    <ImageView
-        android:id="@+id/img_paly"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:src="@drawable/ic_play"
-        android:visibility="gone" />
 
     <TableLayout
+        android:visibility="gone"
         android:id="@+id/hud_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
