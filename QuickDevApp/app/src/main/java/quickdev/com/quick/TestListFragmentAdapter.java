@@ -36,6 +36,11 @@ public class TestListFragmentAdapter extends BaseRVAdapter {
     }
 
     @Override
+    public int setItemViewType(int position) {
+        return 0;
+    }
+
+    @Override
     public RecyclerView.ViewHolder onCreateHolder(ViewGroup viewGroup, int viewType) {
         return new Holder(LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.test_item, viewGroup, false));
     }

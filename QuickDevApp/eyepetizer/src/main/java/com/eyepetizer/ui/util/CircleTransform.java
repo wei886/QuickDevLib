@@ -10,6 +10,11 @@ import com.squareup.picasso.Transformation;
 public class CircleTransform implements Transformation {
     @Override
     public Bitmap transform(Bitmap source) {
+
+        if (source == null) {
+            return source;
+        }
+
         int size = Math.min(source.getWidth(), source.getHeight());
 
         int x = (source.getWidth() - size) / 2;
@@ -19,8 +24,12 @@ public class CircleTransform implements Transformation {
         if (squaredBitmap != source) {
             source.recycle(); //回收垃圾
         }
-
-        Bitmap bitmap = Bitmap.createBitmap(size, size, source.getConfig());
+        Bitmap bitmap;
+        if (source.getConfig() == null) {
+            bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888);
+        } else {
+            bitmap = Bitmap.createBitmap(size, size, source.getConfig());
+        }
 
         Canvas canvas = new Canvas(bitmap);
         Paint paint = new Paint();

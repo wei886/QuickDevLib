@@ -41,10 +41,10 @@ public class NetInterceptor implements Interceptor {
 //        if (originalRequest.body() == null || originalRequest.header("Content-Encoding") != null) {
 //            newBuilder
 //                    .header("User-Agent", "KKTablet/Android");
-////                    .header("Content-Type", "application/x-www-form-urlencoded");
+////                    .header("Content-Type", "com.ijkplayerlib.media.application/x-www-form-urlencoded");
 //        } else {
 //            newBuilder.header("User-Agent", "KKTablet/Android")
-////                    .header("Content-Type", "application/octet-stream")
+////                    .header("Content-Type", "com.ijkplayerlib.media.application/octet-stream")
 //                    .header("Content-Encoding", "gzip")
 //                    .method(originalRequest.method(), gzip(originalRequest.body()));
 //        }

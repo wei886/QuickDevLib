@@ -2,11 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="quickdev.com.dagger">
 
-    <application
+    <com.ijkplayerlib.application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
         <activity android:name=".MainActivity"></activity>
-    </application>
+    </com.ijkplayerlib.application>
 
 </manifest>

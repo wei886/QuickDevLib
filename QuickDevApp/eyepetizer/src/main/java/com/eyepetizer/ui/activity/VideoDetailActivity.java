@@ -2,9 +2,14 @@ package com.eyepetizer.ui.activity;
 
 import android.animation.Animator;
 import android.annotation.TargetApi;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.graphics.Palette;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.ViewTreeObserver;
@@ -15,6 +20,8 @@ import com.eyepetizer.R;
 import com.eyepetizer.ui.fragment.FragmentReply;
 import com.eyepetizer.ui.model.DailyInfo;
 import com.eyepetizer.ui.util.ImageUtils;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
 import ui.activity.BaseActivity;
 import ui.utils.StatusBarUtils;
@@ -28,10 +35,14 @@ import ui.utils.StatusBarUtils;
 public class VideoDetailActivity extends BaseActivity {
 
     public static String KEY_ITEMLISTBEAN = "ItemListBean";
-    private ImageView mImgVideoCover;
+//    private ImageView mImgVideoCover;
 
     private final String FRAGMENT_TAG = "replay_fragment";
     private DailyInfo.IssueListBean.ItemListBean mItemListBean;
+
+
+    private ImageView mImgPlay;
+    private ImageView mImgCover;
 
 
     @Override
@@ -43,10 +54,47 @@ public class VideoDetailActivity extends BaseActivity {
     @Override
     public void initData(Bundle savedInstanceState) {
 
-
         if (getIntent() != null) {
             mItemListBean = getIntent().getParcelableExtra(KEY_ITEMLISTBEAN);
-            ImageUtils.INSTANCE.disPLay(VideoDetailActivity.this, mImgVideoCover, mItemListBean.getData().getCover().getDetail());
+            if (mItemListBean.getData() != null && mItemListBean.getData().getCover() != null) {
+                ImageUtils.INSTANCE.disPLay(VideoDetailActivity.this, mItemListBean.getData().getCover().getDetail(), new Target() {
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+                        if (bitmap != null) {
+                            mImgCover.setBackground(new BitmapDrawable(getResources(), bitmap));
+                            new Palette.Builder(bitmap).generate(new Palette.PaletteAsyncListener() {
+                                @Override
+                                public void onGenerated(Palette palette) {
+                                    Palette.Swatch vibrantSwatch = palette.getVibrantSwatch();
+                                    Palette.Swatch darkMutedSwatch = palette.getDarkMutedSwatch();
+                                    Palette.Swatch lightMutedSwatch = palette.getLightMutedSwatch();
+                                    Palette.Swatch mutedSwatch = palette.getMutedSwatch();
+                                    if (null != lightMutedSwatch) {
+                                        findView(R.id.fl).setBackgroundColor(lightMutedSwatch.getRgb());
+                                    } else if (null != mutedSwatch) {
+                                        findView(R.id.fl).setBackgroundColor(mutedSwatch.getRgb());
+                                    } else if (null != darkMutedSwatch) {
+                                        findView(R.id.fl).setBackgroundColor(darkMutedSwatch.getRgb());
+                                    } else if (null != vibrantSwatch) {
+                                        findView(R.id.fl).setBackgroundColor(vibrantSwatch.getRgb());
+                                    }
+                                }
+                            });
+
+                        }
+                    }
+
+                    @Override
+                    public void onBitmapFailed(Drawable errorDrawable) {
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+                    }
+                });
+            }
         }
 
 
@@ -69,7 +117,12 @@ public class VideoDetailActivity extends BaseActivity {
 
         setupBackImg();
 
+
+
+        mImgPlay.setOnClickListener(this);
+
     }
+
 
     private void setupBackImg() {
         ImageView imgBack = new ImageView(this);
@@ -91,7 +144,10 @@ public class VideoDetailActivity extends BaseActivity {
     @Override
     public void initView() {
 
-        mImgVideoCover = findView(R.id.img_video_cover);
+
+        mImgPlay = findView(R.id.img_paly);
+
+        mImgCover = findView(R.id.img_video_cover);
 
     }
 
@@ -129,13 +185,13 @@ public class VideoDetailActivity extends BaseActivity {
 //        getWindow().setSharedElementEnterTransition(ts);
 
 
-        mImgVideoCover.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutListener);
+        mImgCover.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutListener);
     }
 
     ViewTreeObserver.OnGlobalLayoutListener mOnGlobalLayoutListener = new ViewTreeObserver.OnGlobalLayoutListener() {
         @Override
         public void onGlobalLayout() {
-            animateRevealShow(mImgVideoCover);
+            animateRevealShow(mImgCover);
         }
     };
 
@@ -146,6 +202,11 @@ public class VideoDetailActivity extends BaseActivity {
     }
 
 
+    /**
+     * 水波纹的效果
+     *
+     * @param viewRoot
+     */
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void animateRevealShow(View viewRoot) {
         int cx = (viewRoot.getLeft() + viewRoot.getRight()) / 2;
@@ -156,7 +217,7 @@ public class VideoDetailActivity extends BaseActivity {
         anim.setDuration(1000);
         anim.start();
 
-        mImgVideoCover.getViewTreeObserver().removeOnGlobalLayoutListener(mOnGlobalLayoutListener);
+        mImgCover.getViewTreeObserver().removeOnGlobalLayoutListener(mOnGlobalLayoutListener);
 
         anim.addListener(new Animator.AnimatorListener() {
             @Override
@@ -185,5 +246,25 @@ public class VideoDetailActivity extends BaseActivity {
     public void onBackPressed() {
 //        super.onBackPressed();
         finishAfterTransition();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+
+    }
+
+
+    @Override
+    public void onClick(View v) {
+        super.onClick(v);
+        switch (v.getId()) {
+            case R.id.img_paly:
+                Intent intent = new Intent(VideoDetailActivity.this, VideoPlayActivity.class);
+                intent.putExtra(KEY_ITEMLISTBEAN, mItemListBean);
+                startActivity(intent);
+
+                break;
+        }
     }
 }

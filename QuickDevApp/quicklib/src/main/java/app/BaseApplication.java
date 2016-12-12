@@ -12,5 +12,6 @@ public class BaseApplication extends Application {
 
         mContext = this;
 
+
      }
 }

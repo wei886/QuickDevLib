@@ -12,7 +12,7 @@ import retrofit2.Converter;
 
 public class FastJsonRequestBodyConverter<T> implements Converter<T, RequestBody> {
 
-    private static final MediaType MEDIA_TYPE = MediaType.parse("application/octet-stream");
+    private static final MediaType MEDIA_TYPE = MediaType.parse("com.ijkplayerlib.media.application/octet-stream");
 
     @Override
     public RequestBody convert(T value) throws IOException {

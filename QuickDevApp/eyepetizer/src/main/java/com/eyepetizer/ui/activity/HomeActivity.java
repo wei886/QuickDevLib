@@ -1,6 +1,8 @@
 package com.eyepetizer.ui.activity;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.widget.RadioGroup;
@@ -14,6 +16,7 @@ import com.eyepetizer.ui.fragment.FragmentProfile;
 import java.util.ArrayList;
 import java.util.List;
 
+import common.ToastUtils;
 import ui.activity.BaseActivity;
 
 public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
@@ -26,6 +29,7 @@ public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedCh
             {"TAG_FEED", "TAG_PGC", "TAG_CATEGORY", "TAG_PROFILE"};
 
     private int mCurrentPos = 0;
+    private Handler testHandle = new Handler();
 
     @Override
     public int setLayoutId() {
@@ -44,6 +48,30 @@ public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
 
         getSupportFragmentManager().beginTransaction().add(R.id.container, mFragments.get(mCurrentPos), TAG_FRAGMENT[mCurrentPos]).commit();
+
+
+        testHandle.post(new Runnable() {
+            @Override
+            public void run() {
+                runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+
+                        ToastUtils.toast(HomeActivity.this, "ddsdsd");
+                    }
+                });
+            }
+        });
+
+
+
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+
+        ToastUtils.toast(HomeActivity.this, "x");
 
     }
 

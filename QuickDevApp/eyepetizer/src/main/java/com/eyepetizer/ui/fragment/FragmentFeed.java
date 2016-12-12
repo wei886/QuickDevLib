@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
 
 import com.eyepetizer.R;
 import com.eyepetizer.ui.activity.VideoDetailActivity;
@@ -109,4 +111,29 @@ public class FragmentFeed extends BaseSpecialListFragment implements FragmentFee
         notifyDataRequestFailure();
 
     }
+
+
+    class Da extends BaseAdapter{
+
+        @Override
+        public int getCount() {
+            return 0;
+        }
+
+        @Override
+        public Object getItem(int position) {
+            return null;
+        }
+
+        @Override
+        public long getItemId(int position) {
+            return 0;
+        }
+
+        @Override
+        public View getView(int position, View convertView, ViewGroup parent) {
+            return null;
+        }
+    }
+
 }

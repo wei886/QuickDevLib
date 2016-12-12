@@ -55,6 +55,7 @@ public class SplashActivity extends BaseActivity {
             }
         });
         animatorSet.start();
+
     }
 
     @Override

@@ -1,1 +1,1 @@
-include ':app', ':quicklib', ':dagger', ':test', ':eyepetizer'
+include ':app', ':quicklib', ':dagger', ':eyepetizer',  ':ijkplayerlib'

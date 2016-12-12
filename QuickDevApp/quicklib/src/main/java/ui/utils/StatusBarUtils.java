@@ -140,9 +140,20 @@ public final class StatusBarUtils {
 
     /**
      * 处理4.4沉浸
+     * <p>
+     * WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS
+     * WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION
+     * 正如它们的变量名的意思，使用这两个属性，
+     * 可以使得状态栏和导航栏变为透明，
+     * 导航栏指的就是Android下方的三大按键，
+     * 当然只使用第一个属性也可以达到今天所要完成的效果
      */
     @TargetApi(Build.VERSION_CODES.KITKAT)
     private void processKitkat() {
+
+//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT){
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 
         WindowManager.LayoutParams winParams = window.getAttributes();
         final int bits = WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS;
@@ -152,6 +163,8 @@ public final class StatusBarUtils {
             winParams.flags &= ~bits;
         }
         window.setAttributes(winParams);
+
+
     }
 
     /**

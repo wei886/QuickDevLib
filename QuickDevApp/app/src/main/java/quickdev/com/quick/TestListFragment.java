@@ -41,7 +41,7 @@ public class TestListFragment extends BaseListFragment {
         if (getLoadType() == REQUEST_REFRESH) { //下拉刷新
             resetAdapter(mAdapter);
         } else {
-        notifyDataRequestSuccess(temp, mData);
+        notifyDataRequestSuccess(mData);
 
         }
 
