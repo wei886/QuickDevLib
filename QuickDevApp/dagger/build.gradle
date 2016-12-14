@@ -21,6 +21,9 @@ android {
     }
 }
 
+
+apply plugin: 'android-apt'
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -29,6 +32,11 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
 
-    apt 'com.google.dagger:dagger-compiler:2.0'
-    compile 'com.google.dagger:dagger:2.0'
+    //使用APT生成工具，生成需要的DI代码
+    apt 'com.google.dagger:dagger-compiler:2.5'
+    //JSR250的jar包，使用这个和使用glassFish的那个一样，仅为了使用@Inject 和@Named注解
+    provided 'javax.annotation:jsr250-api:1.0'
+    //Dagger2 的依赖
+    compile 'com.google.dagger:dagger:2.5'
+
 }

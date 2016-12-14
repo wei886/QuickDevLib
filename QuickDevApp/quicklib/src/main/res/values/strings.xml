@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">quickLib</string>
+    <string name="app_name">Lib</string>
 
     <string name="quick_lv_load_more">Load More …</string>
     <string name="quick_lv_no_more_data">No More Data</string>

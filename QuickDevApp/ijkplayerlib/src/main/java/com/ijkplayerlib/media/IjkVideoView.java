@@ -1116,8 +1116,8 @@ public class IjkVideoView extends FrameLayout implements MediaController.MediaPl
                 } else if (index == selectedAudioTrack) {
                     builder.appendSection(getContext().getString(R.string.mi_stream_fmt1, index) + " " + getContext().getString(R.string.mi__selected_audio_track));
                 } else {
-                    builder.appendSection(getContext().getString(R.string.mi_stream_fmt1, index));
-                }
+                builder.appendSection(getContext().getString(R.string.mi_stream_fmt1, index));
+            }
                 builder.appendRow2(R.string.mi_type, buildTrackType(trackType));
                 builder.appendRow2(R.string.mi_language, buildLanguage(trackInfo.getLanguage()));
 

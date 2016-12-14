@@ -1,5 +1,6 @@
 package quickdev.com.http;
 
+import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -33,7 +34,7 @@ public class RetActivity extends BaseActivity {
     }
 
     @Override
-    public void initData() {
+    public void initData(Bundle savedInstanceState) {
 
 
         mBtnRetrofitGet.setOnClickListener(new View.OnClickListener() {

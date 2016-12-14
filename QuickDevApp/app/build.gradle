@@ -37,5 +37,7 @@ dependencies {
     testCompile "junit:junit:$rootProject.ext.junitVersion"
     compile project(path: ':quicklib')
 
+    compile project(':dagger')
+
 
 }

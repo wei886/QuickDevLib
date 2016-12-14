@@ -48,6 +48,14 @@ public class MainActivity extends BaseActivity {
         });
 
 
+        new NewButton(mContenxt, (ViewGroup) findViewById(R.id.activity_main)).setText("dagger").onclick(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mContenxt, com.dagger.MainActivity.class));
+            }
+        });
+
+
     }
 
 
