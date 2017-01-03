@@ -1,32 +1,33 @@
 package common.util;
 
 import android.app.Activity;
+import android.content.Context;
 import android.util.DisplayMetrics;
 
-/**
- * @ explain:
- */
 public class ScreenUtils {
 
     private ScreenUtils(){
 
     }
 
-    public static int  getScreenHeight(Activity activity){
+    public static int  getScreenHeight(Context activity){
         DisplayMetrics displayMetrics = getDisplayMetrics(activity);
 
         return displayMetrics.heightPixels;
     }
 
-    public static int  getScreenWidth(Activity activity){
+    public static int  getScreenWidth(Context activity){
         DisplayMetrics displayMetrics = getDisplayMetrics(activity);
         return displayMetrics.widthPixels;
     }
 
 
-    public static DisplayMetrics getDisplayMetrics(Activity activity){
+    public static DisplayMetrics getDisplayMetrics(Context activity){
         DisplayMetrics displayMetrics = new DisplayMetrics();
-        activity.getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+        ((Activity)activity).getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
         return displayMetrics;
     }
+
+
+
 }

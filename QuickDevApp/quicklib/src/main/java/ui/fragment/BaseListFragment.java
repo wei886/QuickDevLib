@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import quickdev.com.quicklib.R;
+import dev.com.quicklib.R;
 import ui.common.CommonConfig;
 import ui.widiget.LoadMoreWrapper;
 

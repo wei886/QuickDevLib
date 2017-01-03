@@ -2,7 +2,7 @@ package Http.util;
 
 import android.content.Context;
 
-import quickdev.com.quicklib.R;
+import dev.com.quicklib.R;
 
 
 /**

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    tools:context="com.ormlite.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="insert" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_id"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#ccc"
+                    android:hint="id"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#ccc"
+                    android:hint="name"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/edt_age"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#ccc"
+                    android:hint="age"
+                    android:padding="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="update" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edt_id_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#ccc"
+                    android:hint="id"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/edt_name_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#ccc"
+                    android:hint="name"
+                    android:padding="12dp" />
+
+                <EditText
+                    android:id="@+id/edt_age_1"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="#ccc"
+                    android:hint="age"
+                    android:padding="12dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_query_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="query" />
+
+            <TextView
+                android:id="@+id/tv_query_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="query" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

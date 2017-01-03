@@ -1,6 +1,8 @@
 package com.dagger.demo;
 
 
+import javax.inject.Inject;
+
 /**
  * author: midVictor
  * date: on 2016/12/13
@@ -8,6 +10,11 @@ package com.dagger.demo;
  */
 
 public class User {
+
+    @Inject
+    User(){
+
+    }
 
     String name;
 

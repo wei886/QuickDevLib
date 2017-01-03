@@ -1,1 +1,1 @@
-include ':app', ':quicklib', ':dagger', ':eyepetizer',  ':ijkplayerlib'
+include ':app', ':quicklib', ':dagger', ':eyepetizer', ':ijkplayerlib', ':ormlite', ':ndklib'

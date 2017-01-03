@@ -1,5 +1,7 @@
 package com.dagger.demo;
 
+import javax.inject.Inject;
+
 /**
  * author: midVictor
  * date: on 2016/12/13
@@ -12,6 +14,9 @@ public class Person {
     private String name ="dd";
     private boolean sex;
 
+
+    @Inject
+    Person(){}
 
     public int getAge() {
         return age;

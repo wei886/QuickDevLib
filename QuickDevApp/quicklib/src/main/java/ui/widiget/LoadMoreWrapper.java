@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import quickdev.com.quicklib.R;
+import dev.com.quicklib.R;
 
 
 /**

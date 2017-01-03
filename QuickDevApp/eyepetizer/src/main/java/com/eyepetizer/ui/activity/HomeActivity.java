@@ -65,6 +65,8 @@ public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedCh
 
 
 
+
+
     }
 
     @Override
@@ -72,6 +74,7 @@ public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         super.onConfigurationChanged(newConfig);
 
         ToastUtils.toast(HomeActivity.this, "x");
+
 
     }
 

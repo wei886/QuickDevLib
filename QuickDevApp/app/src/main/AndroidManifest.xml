@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="quickdev.com.quick">
+    package="dev.com.quick">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -14,20 +14,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name="quickdev.com.MyApp"
+        android:name="dev.com.MyApp"
         android:theme="@style/Theme.AppCompat.Light">
-        <activity android:name=".MainActivity" >
+        <activity android:name="dev.com.quick.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             </activity>
-        <activity android:name=".SecondActivity">
+        <activity android:name="dev.com.quick.SecondActivity" android:launchMode="singleInstance" android:taskAffinity="" >
 
         </activity>
-        <activity android:name="quickdev.com.bluetooth.BlueToothActivity" />
-        <activity android:name="quickdev.com.http.RetActivity"></activity>
+        <activity android:name="dev.com.bluetooth.BlueToothActivity" />
+        <activity android:name="dev.com.http.RetActivity"></activity>
+
+        <activity android:name="dev.com.Inject.InjectMainActivity"></activity>
     </application>
 
 </manifest>

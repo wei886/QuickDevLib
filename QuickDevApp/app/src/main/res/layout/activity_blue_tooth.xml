@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context="quickdev.com.bluetooth.BlueToothActivity">
+    tools:context="dev.com.bluetooth.BlueToothActivity">
 
     <LinearLayout
         android:layout_width="wrap_content"

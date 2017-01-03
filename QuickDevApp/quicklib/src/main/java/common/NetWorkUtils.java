@@ -41,4 +41,24 @@ public class NetWorkUtils {
         }
         return netType;
     }
+
+
+    /**
+     * 是不是wifi
+     */
+    public static boolean isWifi(Context context) {
+
+        return getNetworkType(context) == NETTYPE_WIFI;
+    }
+
+
+    /**
+     * 是不是手机网络
+     */
+    public static boolean isMobile(Context context) {
+
+        return getNetworkType(context) == NETTYPE_MOBILE;
+    }
+
+
 }

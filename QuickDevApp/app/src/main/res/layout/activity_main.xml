@@ -5,9 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="quickdev.com.quick.MainActivity">
+    android:paddingTop="100dp"
+    tools:context="dev.com.quick.MainActivity">
+
+    <dev.com.test.SpiderWebView
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        android:visibility="gone" />
+
+    <dev.com.test.BitmapView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ccc"
+        android:visibility="gone" />
 
 
+    <dev.com.test.QuadView
+        android:id="@+id/quadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+
+    <dev.com.test.PathMeasureView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#000" />
 
 
 </LinearLayout>
