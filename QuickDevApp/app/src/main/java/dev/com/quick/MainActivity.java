@@ -10,6 +10,7 @@ import android.widget.LinearLayout;
 import dev.com.Inject.InjectMainActivity;
 import dev.com.View.NewButton;
 import dev.com.http.RetActivity;
+import dev.com.test.PathActivity;
 import dev.com.test.QuadView;
 import ui.activity.BaseActivity;
 
@@ -59,7 +60,6 @@ public class MainActivity extends BaseActivity {
         });
 
 
-
         new NewButton(mContenxt, (ViewGroup) findViewById(R.id.activity_main)).setText("ormlite").onclick(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,6 +71,13 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(mContenxt, InjectMainActivity.class));
+            }
+        });
+
+        new NewButton(mContenxt, (ViewGroup) findViewById(R.id.activity_main)).setText("pathActivity").onclick(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(mContenxt, PathActivity.class));
             }
         });
 

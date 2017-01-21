@@ -17,11 +17,7 @@
         android:name="dev.com.MyApp"
         android:theme="@style/Theme.AppCompat.Light">
         <activity android:name="dev.com.quick.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             </activity>
         <activity android:name="dev.com.quick.SecondActivity" android:launchMode="singleInstance" android:taskAffinity="" >
 
@@ -30,6 +26,15 @@
         <activity android:name="dev.com.http.RetActivity"></activity>
 
         <activity android:name="dev.com.Inject.InjectMainActivity"></activity>
+        <activity android:name="dev.com.test.PathActivity"  >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
     </application>
 
 </manifest>

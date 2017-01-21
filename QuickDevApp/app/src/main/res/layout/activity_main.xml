@@ -1,36 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingTop="100dp"
     tools:context="dev.com.quick.MainActivity">
 
-    <dev.com.test.SpiderWebView
-        android:layout_width="wrap_content"
-        android:layout_height="320dp"
-        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/activity_main"
 
-    <dev.com.test.BitmapView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#ccc"
-        android:visibility="gone" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
+        <dev.com.test.SpiderWebView
+            android:layout_width="wrap_content"
+            android:layout_height="320dp"
+            android:visibility="gone" />
 
-    <dev.com.test.QuadView
-        android:id="@+id/quadView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:visibility="gone" />
-
-
-    <dev.com.test.PathMeasureView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#000" />
+        <dev.com.test.BitmapView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ccc"
+            android:visibility="gone" />
 
 
-</LinearLayout>
+        <dev.com.test.QuadView
+            android:id="@+id/quadView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <dev.com.test.PathMeasureView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000" />
+    </LinearLayout>
+
+</ScrollView>

@@ -77,6 +77,7 @@ public class QuadView extends View {
 
         mPaint.setStyle(Paint.Style.FILL);
         canvas.drawPath(pathQuad, mPaint);
+
     }
 
     public void startMove() {

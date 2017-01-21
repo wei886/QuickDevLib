@@ -6,6 +6,10 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import dev.com.Inject.proxydemo.Human;
+import dev.com.Inject.proxydemo.ProxyDtStudent;
+import dev.com.Inject.proxydemo.Student;
+
 /**
  * author: midVictor
  * date: on 2017/1/3
@@ -62,7 +66,7 @@ public class Test {
 
             User ao = (User) aaaaa.newInstance("aaaa", 211);
 
-            sys("a1=" + ao.getName());
+//            sys("a1=" + ao.getName());
             aaaaa.setAccessible(true);
             Method setName = aClass.getMethod("setName", new Class[]{String.class});
 
@@ -71,9 +75,20 @@ public class Test {
 //            sys(ao.getName());
 
 
+//            ProxyStudent proxyStudent =new ProxyStudent();
+//            ProxyStudent bind = proxyStudent.bind(new Student());
+//            bind.eat();
 
 
+            ProxyDtStudent proxyDtStudent =new ProxyDtStudent();
+            Human bind = (Human) proxyDtStudent.bind(new Student());
 
+
+//            sys(bind.toString());
+//
+//            sys();
+
+            bind.eat();
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
