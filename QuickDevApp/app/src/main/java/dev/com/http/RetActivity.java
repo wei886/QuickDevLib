@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.util.List;
 
 import Http.retrofit.RetrofitClient;
-import common.NetWorkUtils;
+import common.util.NetWorkUtils;
 import dev.com.http.bean.MovieItem;
 import dev.com.http.service.MovieceService;
 import dev.com.quick.R;

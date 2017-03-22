@@ -4,68 +4,66 @@ import android.content.Context;
 import android.os.Environment;
 import android.os.StatFs;
 import android.os.storage.StorageManager;
-import android.util.Log;
+import android.text.TextUtils;
 
 import java.io.File;
-import java.io.IOException;
 import java.lang.reflect.Array;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 
 public class SDCardUtils {
 
     private static String Tag = "SDCardUtils";
-    public static final String root = "/storage";
-    public static final String root_sdcard = "sdcard";
 
-    private SDCardUtils() {
-        /* cannot be instantiated */
-        throw new UnsupportedOperationException("cannot be instantiated");
+
+    public static final String PACKNAME_NAME = "wh_test";
+    public static final String Picture_suffix = ".png";
+
+
+    /**
+     * 获取手机插入的外置SD卡路径
+     *
+     * @param context
+     * @return
+     */
+    public static String getExternSDCardPath(Context context) {
+        return getExternSdPath(context, true);
     }
 
-    public static final String FILE_CACHE_ROOT;
-    public static final String PACKNAME_NAME = "hobby";
 
-    static {
-
-        FILE_CACHE_ROOT = getSDCardPath() + PACKNAME_NAME;
-
+    /**
+     * 获取手机内置SD卡路径
+     * /storage/sdcard0
+     *
+     * @return
+     */
+    public static String getInternalSDCardPath() {
+        return Environment.getExternalStorageDirectory().getAbsolutePath()
+                + File.separator;
     }
 
-    public static String getExternStoragePath(Context context) {
-        return getStoragePath(context, true);
+
+    /**
+     * 手机内部存储的路径 (一般不用)
+     * Environment.getDataDirectory() 	/data
+     * Environment.getDownloadCacheDirectory() 	/cache
+     * Environment.getRootDirectory() 	/system
+     *
+     * @return
+     */
+    public static String getInternalStoragePath() {
+        return Environment.getDataDirectory().getAbsolutePath() + File.separator;
     }
 
-    public static List<File> getRootPath(Context context) {
-        File file = new File(root);
-        List<File> fileArrayList = new ArrayList<>();
-        if (!file.exists()) {
-            File externalStorageDirectory = Environment.getExternalStorageDirectory();
-            fileArrayList.add(externalStorageDirectory);
-            return fileArrayList;
-        }
-        String storagePath = getStoragePath(context, true);
-         if (storagePath != null) {
-            fileArrayList.add(new File(storagePath));
-        }
-        fileArrayList.add(Environment.getExternalStorageDirectory());
 
-/*
-        for(int i=0;i<files.length;i++){
-            File child = files[i];
-             if(child.exists()){
-                 if(child.getName().contains(root_sdcard)){
-                     fileArrayList.add(child);
-                 }
-             }
-
-        }*/
-        return fileArrayList;
-    }
-
-    private static String getStoragePath(Context mContext, boolean is_removale) {
+    /**
+     * 获取手机插入的外置SD卡路径
+     *
+     * @param mContext
+     * @param is_removale
+     * @return
+     */
+    private static String getExternSdPath(Context mContext, boolean is_removale) {
 
         StorageManager mStorageManager = (StorageManager) mContext.getSystemService(Context.STORAGE_SERVICE);
         Class<?> storageVolumeClazz = null;
@@ -98,73 +96,25 @@ public class SDCardUtils {
 
 
     /**
-     * 判断SDCard是否可用
+     * 判断内置SDCard是否挂载
      *
      * @return
      */
-    public static boolean isSDCardEnable() {
+    public static boolean isInternalSDCardEnable() {
         return Environment.getExternalStorageState().equals(
                 Environment.MEDIA_MOUNTED);
 
     }
 
-    public static File getCacheFile(Context context, String fileName) {
-        File file = getExternalCacheDirFile(context);
-        if (file == null) {
-            file = context.getCacheDir();
-        }
-        return new File(file, fileName);
-    }
-
-    public static String getCachePath(Context context, String fileName) {
-        return getCacheFile(context, fileName).getAbsolutePath().toString();
-    }
-
 
     /**
-     * 获取缓存的路径
-     *
-     * @param context
-     * @return
-     */
-    private static File getExternalCacheDirFile(Context context) {
-        if (!isSDCardEnable()) {//当sd卡不可用的时候，返回空
-            return null;
-        }
-        File dataDir = new File(new File(Environment.getExternalStorageDirectory().toString(), "Android"), "data");
-        File appCacheDir = new File(new File(dataDir, context.getPackageName()), "cache");
-        if (!appCacheDir.exists()) {
-            if (!appCacheDir.mkdirs()) {
-                Log.w(Tag, "Unable to create external cache directory");
-                return null;
-            }
-            try {
-                new File(appCacheDir, ".nomedia").createNewFile();
-            } catch (IOException e) {
-                Log.w(Tag, "Can't create \".nomedia\" file in application external cache directory");
-            }
-        }
-        return appCacheDir;
-    }
-
-    /**
-     * 获取SD卡路径
-     *
-     * @return
-     */
-    public static String getSDCardPath() {
-        return Environment.getExternalStorageDirectory().getAbsolutePath()
-                + File.separator;
-    }
-
-    /**
-     * 获取SD卡的剩余容量 单位byte
+     * 获取内置SD卡的剩余容量 单位byte
      *
      * @return
      */
     public static long getSDCardAllSize() {
-        if (isSDCardEnable()) {
-            StatFs stat = new StatFs(getSDCardPath());
+        if (isInternalSDCardEnable()) {
+            StatFs stat = new StatFs(getInternalSDCardPath());
             // 获取空闲的数据块的数量
             long availableBlocks = (long) stat.getAvailableBlocks() - 4;
             // 获取单个数据块的大小（byte）
@@ -182,8 +132,8 @@ public class SDCardUtils {
      */
     public static long getFreeBytes(String filePath) {
         // 如果是sd卡的下的路径，则获取sd卡可用容量
-        if (filePath.startsWith(getSDCardPath())) {
-            filePath = getSDCardPath();
+        if (filePath.startsWith(getInternalSDCardPath())) {
+            filePath = getInternalSDCardPath();
         } else {// 如果是内部存储的路径，则获取内存存储的可用容量
             filePath = Environment.getDataDirectory().getAbsolutePath();
         }
@@ -192,13 +142,60 @@ public class SDCardUtils {
         return stat.getBlockSize() * availableBlocks;
     }
 
+
+    /*************************************************************************************
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_ALARMS) 	/storage/sdcard0/Alarms
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_DCIM) 	/storage/sdcard0/DCIM
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_DOWNLOADS) 	/storage/sdcard0/Download
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_MOVIES) 	/storage/sdcard0/Movies
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_MUSIC) 	/storage/sdcard0/Music
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_NOTIFICATIONS) 	/storage/sdcard0/Notifications
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_PICTURES) 	/storage/sdcard0/Pictures
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_PODCASTS) 	/storage/sdcard0/Podcasts
+     Environment.getExternalStoragePublicDirectory(DIRECTORY_RINGTONES) 	/storage/sdcard0/Ringtones
+     *****************************************************************************************/
+
+
     /**
-     * 获取系统存储路径
+     * @return String
+     * @Title: getCachePath
+     * @Description: 获取应用的cache目录
+     */
+    public static String getInternalCachePath(Context context) {
+        File f = context.getCacheDir();
+        if (null == f) {
+            return null;
+        } else {
+            return f.getAbsolutePath() + File.separator;
+        }
+    }
+
+
+    /**
+     * 获取图片下载的路径
      *
+     * @param context
      * @return
      */
-    public static String getRootDirectoryPath() {
-        return Environment.getRootDirectory().getAbsolutePath();
+    public static String getImageLoadedPath(Context context, String fileName) {
+
+        StringBuilder sb = new StringBuilder();
+
+        String path = "";
+        String internalPath = "";
+
+        if (isInternalSDCardEnable()) {
+            internalPath = getInternalSDCardPath();
+        } else {
+            internalPath = getInternalCachePath(context);
+        }
+
+        if (!TextUtils.isEmpty(internalPath)) {  //内置sd卡路径
+            path = internalPath + PACKNAME_NAME + File.separator + fileName + Picture_suffix;
+        } else { //外置sd卡路径
+            path = getExternSDCardPath(context);
+        }
+        return path;
     }
 
 

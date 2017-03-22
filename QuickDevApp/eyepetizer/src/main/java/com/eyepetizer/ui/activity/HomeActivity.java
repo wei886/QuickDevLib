@@ -16,7 +16,7 @@ import com.eyepetizer.ui.fragment.FragmentProfile;
 import java.util.ArrayList;
 import java.util.List;
 
-import common.ToastUtils;
+import common.util.ToastUtils;
 import ui.activity.BaseActivity;
 
 public class HomeActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {

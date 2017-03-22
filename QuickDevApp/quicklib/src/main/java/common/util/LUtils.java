@@ -1,9 +1,5 @@
 package common.util;
 
-/**
- * Created by Domen、on 2016/4/28.
- */
-
 import android.os.Environment;
 import android.text.TextUtils;
 import android.util.Log;

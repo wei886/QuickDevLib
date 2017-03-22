@@ -7,7 +7,7 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
-import common.ToastUtils;
+import common.util.ToastUtils;
 import ui.adapter.BaseRVAdapter;
 import ui.common.CommonConfig;
 import ui.fragment.BaseListFragment;

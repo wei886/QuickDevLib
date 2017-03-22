@@ -6,7 +6,7 @@ package Http.interceptor;
 import java.io.IOException;
 
 import app.BaseApplication;
-import common.NetWorkUtils;
+import common.util.NetWorkUtils;
 import okhttp3.CacheControl;
 import okhttp3.Interceptor;
 import okhttp3.MediaType;

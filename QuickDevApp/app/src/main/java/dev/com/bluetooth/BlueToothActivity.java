@@ -14,7 +14,7 @@ import android.widget.TextView;
 import java.util.Iterator;
 import java.util.Set;
 
-import common.ToastUtils;
+import common.util.ToastUtils;
 import dev.com.quick.R;
 
 public class BlueToothActivity extends AppCompatActivity implements View.OnClickListener {

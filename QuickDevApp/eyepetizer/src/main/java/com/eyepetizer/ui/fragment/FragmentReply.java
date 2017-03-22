@@ -16,7 +16,7 @@ import com.eyepetizer.ui.presenter.impl.FragmentReplyPresentImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-import common.ToastUtils;
+import common.util.ToastUtils;
 import ui.fragment.BaseListFragment;
 
 /**
