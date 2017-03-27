@@ -18,7 +18,7 @@ import dev.com.quicklib.R;
 public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 
-    private final int TYPE_LOAD_MORE = 1000;
+    public static final int TYPE_LOAD_MORE = 1000;
 //    private final int TYPE_ITEM = 1001;
 
     public static final int LOADSTATUS_NORMAL = 0;//默认状态
@@ -174,46 +174,46 @@ public class LoadMoreWrapper extends RecyclerView.Adapter<RecyclerView.ViewHolde
         }
     }
 
-    @Override
-    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        mInnerAdapter.onAttachedToRecyclerView(recyclerView);
-    }
-
-    @Override
-    public void onDetachedFromRecyclerView(RecyclerView recyclerView) {
-        mInnerAdapter.onDetachedFromRecyclerView(recyclerView);
-    }
-
-    @Override
-    public void onViewAttachedToWindow(RecyclerView.ViewHolder holder) {
-        mInnerAdapter.onViewAttachedToWindow(holder);
-    }
-
-    @Override
-    public void onViewDetachedFromWindow(RecyclerView.ViewHolder holder) {
-        mInnerAdapter.onViewDetachedFromWindow(holder);
-    }
-
-    @Override
-    public void onViewRecycled(RecyclerView.ViewHolder holder) {
-        super.onViewRecycled(holder);
-    }
-
-    @Override
-    public boolean onFailedToRecycleView(RecyclerView.ViewHolder holder) {
-        return mInnerAdapter.onFailedToRecycleView(holder);
-    }
-
-
-    @Override
-    public void unregisterAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
-        mInnerAdapter.unregisterAdapterDataObserver(observer);
-    }
-
-
-    @Override
-    public void registerAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
-        mInnerAdapter.registerAdapterDataObserver(observer);
-    }
+//    @Override
+//    public void onAttachedToRecyclerView(RecyclerView recyclerView) {
+//        mInnerAdapter.onAttachedToRecyclerView(recyclerView);
+//    }
+//
+//    @Override
+//    public void onDetachedFromRecyclerView(RecyclerView recyclerView) {
+//        mInnerAdapter.onDetachedFromRecyclerView(recyclerView);
+//    }
+//
+//    @Override
+//    public void onViewAttachedToWindow(RecyclerView.ViewHolder holder) {
+//        mInnerAdapter.onViewAttachedToWindow(holder);
+//    }
+//
+//    @Override
+//    public void onViewDetachedFromWindow(RecyclerView.ViewHolder holder) {
+//        mInnerAdapter.onViewDetachedFromWindow(holder);
+//    }
+//
+//    @Override
+//    public void onViewRecycled(RecyclerView.ViewHolder holder) {
+//        super.onViewRecycled(holder);
+//    }
+//
+//    @Override
+//    public boolean onFailedToRecycleView(RecyclerView.ViewHolder holder) {
+//        return mInnerAdapter.onFailedToRecycleView(holder);
+//    }
+//
+//
+//    @Override
+//    public void unregisterAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
+//        mInnerAdapter.unregisterAdapterDataObserver(observer);
+//    }
+//
+//
+//    @Override
+//    public void registerAdapterDataObserver(RecyclerView.AdapterDataObserver observer) {
+//        mInnerAdapter.registerAdapterDataObserver(observer);
+//    }
 
 }

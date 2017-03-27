@@ -14,8 +14,8 @@ import java.util.ArrayList;
 public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     //    private final int TYPE_BASE_ITEM = -302;
-    private final int TYPE_BASE_HEAD = -300;
-    private final int TYPE_BASE_FOOTER = -301;
+    public static final int TYPE_BASE_HEAD = -300;
+    public static final int TYPE_BASE_FOOTER = -301;
     public Context context;
 
     private OnItemClickListener onItemClickLintener;
@@ -33,7 +33,6 @@ public abstract class BaseRVAdapter extends RecyclerView.Adapter<RecyclerView.Vi
 
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int i) {
-//        Log.e("TAG", "onBindViewHolder_i=" + i);
         int itemType = getItemViewType(i);
         if (itemType == setItemViewType(i)) {
             i -= getHeadSize();

@@ -5,6 +5,7 @@ import android.os.Environment;
 import android.os.StatFs;
 import android.os.storage.StorageManager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import java.io.File;
 import java.lang.reflect.Array;
@@ -191,11 +192,27 @@ public class SDCardUtils {
         }
 
         if (!TextUtils.isEmpty(internalPath)) {  //内置sd卡路径
-            path = internalPath + PACKNAME_NAME + File.separator + fileName + Picture_suffix;
+            path = internalPath + PACKNAME_NAME + File.separator;
         } else { //外置sd卡路径
             path = getExternSDCardPath(context);
         }
+        createDirs(path);
+
+        Log.e("wh","path -- =" +path);
+
+        path += fileName + Picture_suffix;
         return path;
+    }
+
+    public static boolean createDirs(String dirPath) {
+        if (TextUtils.isEmpty(dirPath)) {
+            return false;
+        }
+        File file = new File(dirPath);
+        if (!file.exists() || !file.isDirectory()) {
+            return file.mkdirs();
+        }
+        return true;
     }
 
 

@@ -15,6 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import common.util.SDCardUtils;
+import common.util.ToastUtils;
 import dev.com.quicklib.R;
 
 
@@ -30,10 +31,10 @@ public class ImageUtils {
     }
 
 
-    private ImageUtils INSTANCE;
+    private static ImageUtils INSTANCE;
 
 
-    public ImageUtils instance(Context context) {
+    public static ImageUtils instance(Context context) {
         if (null == INSTANCE) {
             synchronized (ImageUtils.class) {
                 if (null == INSTANCE)
@@ -47,7 +48,7 @@ public class ImageUtils {
     /**
      * 执行单线程列队执行
      */
-    public void runOnQueue(Runnable runnable) {
+    private void runOnQueue(Runnable runnable) {
         if (singleExecutor == null) {
             singleExecutor = Executors.newSingleThreadExecutor();
         }
@@ -58,7 +59,7 @@ public class ImageUtils {
     public void disPlayImage(Context context, String url, ImageView imageView) {
         Glide.with(context).load(url).placeholder(R.drawable.picture_default).error(R.drawable.picture_error).into(imageView);
     }
-    
+
 
     /**
      * 启动图片下载线程
@@ -73,7 +74,7 @@ public class ImageUtils {
                     @Override
                     public void onDownLoadSuccess(File file) {
                         final String desPath = SDCardUtils.getImageLoadedPath(mContext, fileName);
-                        savePhotoToSDCard(file.getPath(), desPath);
+                        savePhotoToSDCard(file.getPath(), desPath, null, false);
                         ((Activity) mContext).runOnUiThread(new Runnable() {
 
                             @Override
@@ -93,13 +94,37 @@ public class ImageUtils {
         runOnQueue(service);
     }
 
+
+    /**
+     * @param url
+     * @param fileName
+     */
+    public void downLoadImage(String url, final String fileName, final Context context) {
+        DownLoadImageService service = new DownLoadImageService(mContext,
+                url,
+                new ImageDownLoadCallBack() {
+                    @Override
+                    public void onDownLoadSuccess(File file) {
+                        final String desPath = SDCardUtils.getImageLoadedPath(mContext, fileName);
+                        savePhotoToSDCard(file.getPath(), desPath, context, true);
+                    }
+
+                    @Override
+                    public void onDownLoadFailed() {
+                    }
+                });
+        //启动图片下载线程
+        runOnQueue(service);
+    }
+
+
     /**
      * 保存到SD卡
      *
      * @param path
      * @param desPath
      */
-    private static void savePhotoToSDCard(String path, String desPath) {
+    private void savePhotoToSDCard(final String path, final String desPath, final Context context, boolean toast) {
         Bitmap bitmap = null;
         try {
             File file = new File(path);
@@ -123,6 +148,15 @@ public class ImageUtils {
             baos.close();
             bitmap.recycle();
             bitmap = null;
+            if (null != context && toast && context instanceof Activity) {
+                Activity activity = (Activity) context;
+                activity.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        ToastUtils.toast(context, "图片保存成功" + desPath);
+                    }
+                });
+            }
         } catch (Exception e) {
             e.printStackTrace();
             return;

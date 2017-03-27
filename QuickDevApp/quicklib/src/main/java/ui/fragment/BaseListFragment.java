@@ -102,7 +102,7 @@ public abstract class BaseListFragment extends Fragment implements SwipeRefreshL
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.quick_base_list_fragment, container, false);
+        return inflater.inflate(R.layout.base_list_content, container, false);
     }
 
 
